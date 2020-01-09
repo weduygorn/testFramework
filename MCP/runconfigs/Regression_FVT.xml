@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="classes" thread-count="1">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+            <include name="stage"/>
+        </run>
+    </groups>
+    <test name="PAO+NVS">
+        <classes>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_RT"/>
+        </classes>
+    </test>
+    <test name="TRE+NVS">
+        <classes>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_RT"/>
+        </classes>
+    </test>
+    <test name="PAO+TRE">
+        <classes>
+            <class name="tests.providerscenarios.multiprovider.PAO_TRE_OW"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_TRE_RT"/>
+        </classes>
+    </test>
+    <test name="OBB_RJ">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowDeepLink"/>
+        </classes>
+    </test>
+    <test name="OBB_EN">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.AvailabilityForEN"/>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.OBB_EN_deeplink"/>
+        </classes>
+    </test>
+    <test name="OBB_NJ">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.OBB_NJ_deeplink"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckCompartments"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckAccoPreferences"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckReservation"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckValidationMessages"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultRT"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultChild"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowAdultChildInfant"/>
+        </classes>
+    </test>
+    <test name="OBB_BUS_SWISS">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.IC.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.deeplink.IC.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.deeplink.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.deeplink.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.deeplink.IR.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.IR.FullFlowWithAdult"/>
+        </classes>
+    </test>
+    <test name="PAO_E2E">
+        <classes>
+            <class name="tests.providerscenarios.PAO.FullFlowAdultChildInfantOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.FullFlowOWDeeplink"/>
+            <class name="tests.providerscenarios.PAO.FullFlowAdultChildRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.FullFlowRTDeepLink"/>
+        </classes>
+    </test>
+    <test name="EUROSTAR">
+        <classes>
+            <class name="tests.providerscenarios.PAO.EurostarFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.EurostarFullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.PAO.EurostarFullFlowRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.EurostarFullFlowRTDeepLink"/>
+
+        </classes>
+    </test>
+    <test name="THALYS">
+        <classes>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.ThalysFullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.ThalysFullFlowRTDeepLink"/>
+        </classes>
+    </test>
+    <test name="TRE_E2E">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TranitaliaRT"/>
+        </classes>
+    </test>
+    <test name="TRE_Cancel booking">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaCancelBookingOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaCancelBookingRT"/>
+        </classes>
+    </test>
+    <test name="TRE_Validation Back button">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaBackButtonFlowRT"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaBackButtonsFlowOW"/>
+        </classes>
+    </test>
+    <test name="UI: Connection Result page">
+        <classes>
+            <class name="tests.search.ConnectionDetailsLaterAssertionOW"/>
+            <class name="tests.search.ConnectionResultAssertionOW"/>
+            <class name="tests.search.ConnectionResultAssertionOWByArrival"/>
+            <class name="tests.search.ConnectionResultAssertionRT"/>
+            <class name="tests.search.ConnectionResultAssertionRTByArrival"/>
+        </classes>
+    </test>
+    <test name="UI: Select offers page">
+        <classes>
+            <class name="tests.search.SelectOfferesOWAssertion"/>
+            <class name="tests.search.SelectOffersRTAssertions"/>
+            <class name="tests.search.ShowDetailsOWAssertion"/>
+            <class name="tests.search.ShowDetailsRTAssertion"/>
+            <class name="tests.search.SearchResultsSameAfterRefreshTest"/>
+            <class name="tests.search.ShowConditionDetailsOWAssertion"/>
+            <class name="tests.search.ShowConditionDetailsRTAssertion"/>
+        </classes>
+    </test>
+    <test name="UI: Ticket and Reservation page">
+        <classes>
+            <class name="tests.ticketandreservation.TicketAndReservationPageOWAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationPageRTAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationTicketOWAssertion"/>
+            <class name="tests.ticketandreservation.TicketandReservationBahnCardReservationAssertion"/>
+            <class name="tests.ticketandreservation.CheckReservationPriceForDB1class"/>
+        </classes>
+    </test>
+    <test name="UI: Passenger details page">
+        <classes>
+            <class name="tests.passengerdetails.PassengerDetailsOW5PaxDetailsAssertion"/>
+            <class name="tests.passengerdetails.PassengerDetailsRTAssertionAndValidation"/>
+        </classes>
+    </test>
+    <test name="UI: Ticketing page">
+        <classes>
+            <class name="tests.ticketing.TicketPageDetailsAssertion"/>
+        </classes>
+    </test>
+    <test name="UI: Booking and confirmation page">
+        <classes>
+            <class name="tests.bookingconfirmation.BookingConfirmationDetailsAssertion"/>
+            <class name="tests.bookingconfirmation.BookingConfirmation5PaxBahnIncludedNoReservationAssertion"/>
+        </classes>
+    </test>
+    <test name="UI: Retrieve page">
+        <classes>
+            <class name="tests.bookingretrieverefund.RetrieveBookingDetailsAssertion"/>
+        </classes>
+    </test>
+    <test name="UI: Header">
+        <classes>
+            <class name="tests.search.TopHeaderTest"/>
+            <class name="tests.search.NavigateHeaderTest"/>
+            <class name="tests.search.BreadcrumbsHeaderTest"/>
+        </classes>
+    </test>
+    <test name="UI: FAQ">
+        <classes>
+            <class name="tests.search.FAQAssertions"/>
+        </classes>
+    </test>
+    <test name="UI: Reduction Cards">
+        <classes>
+            <class name="tests.search.MixedBahnCard1classMessageAssertion"/>
+            <class name="tests.search.MixedBahnCard2classMessageAssertion"/>
+        </classes>
+    </test>
+    <test name="UI: DeepLink">
+        <classes>
+            <class name="tests.deeplink.DeepLinkInvalidSecureTokenTest"/>
+            <class name="tests.deeplink.DeepLinkInvalidParametersTest"/>
+            <class name="tests.deeplink.DeepLinkInvalidReductionCardTest"/>
+            <class name="tests.deeplink.DeepLinkParametersInterpretationAssertion"/>
+            <class name="tests.db_deeplink.DeepLinkToDBTests"/>
+        </classes>
+    </test>
+    <test name="UI: Tealium">
+        <classes>
+            <class name="tests.search.ConnectionPageTealiumAssertionOW"/>
+            <class name="tests.search.ConnectionPageTealiumAssertionRT"/>
+            <class name="tests.search.SearchPageTealiumAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationRTTealiumTest"/>
+            <class name="tests.ticketandreservation.TicketAndReservationOWTealiumTest"/>
+            <class name="tests.passengerdetails.PassengerDetailsRTTealiumTest"/>
+            <class name="tests.bookingconfirmation.BookingConfirmationPageTealiumTest"/>
+            <class name="tests.payment.PaymentPageTealiumTest"/>
+            <class name="tests.ticketing.TicketPageDetailsTealiumTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,455 @@
+Status: FAILED
+Time Taken: 2641
+Size: 11461
+Timestamp: Fri Dec 16 17:10:01 EET 2016
+TestStep: RT mandatory date
+
+----------------- Messages ------------------------------
+[SOAP Fault] Response is not a SOAP Fault
+[Contains] Missing token [AMR-963] in Response
+
+----------------- Properties ------------------------------
+Endpoint: https://dev.amr.local/app_dev.php/ws/SoapApi
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "https://acr.localhost/ws/SoapApi/0.1/acr_JourneySearch"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : dev.amr.local
+Accept-Encoding : gzip,deflate
+Content-Length : 1552
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://dev.acr.local/ws/SoapApi/0.1/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:acr_JourneySearch>
+         <access>
+            <!--You may enter the following 4 items in any order-->
+            <resellerCode>as-ws</resellerCode>
+            <userName>as-ws</userName>
+            <password>Test123!</password>
+            <lang>ru</lang>
+         </access>
+         <originDestinationSearch>
+            <!--You may enter the following 5 items in any order-->
+            <originCode>7171801</originCode>
+            <originDate>2016-12-20</originDate>
+            <originTimeFrom>08:00</originTimeFrom>
+            <originTimeTo>23:59</originTimeTo>
+            <destinationCode>7165410</destinationCode>
+         </originDestinationSearch>
+         <roundtripOriginDestinationSearch>
+            <!--You may enter the following 3 items in any order-->
+            <originTimeFrom>08:00</originTimeFrom>
+            <originTimeTo>23:59</originTimeTo>
+         </roundtripOriginDestinationSearch>
+         <passengers>
+            <passenger>
+               <birthDate>1990-01-01</birthDate>
+               <additionalOptions></additionalOptions>
+            </passenger>
+            <passenger>
+               <birthDate>1990-01-01</birthDate>
+               <additionalOptions></additionalOptions>
+            </passenger>
+         </passengers>
+      </ns:acr_JourneySearch>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Transfer-Encoding : chunked
+X-Debug-Token : fab921
+Server : nginx/1.10.0
+Cache-Control : no-cache
+Connection : keep-alive
+#status# : HTTP/1.1 200 OK
+X-Debug-Token-Link : https://dev.amr.local/app_dev.php/_profiler/fab921
+Date : Fri, 16 Dec 2016 15:08:47 GMT
+Content-Type : text/xml; charset=UTF-8
+X-Powered-By : PHP/7.0.13
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://acr.localhost/ws/SoapApi/0.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <SOAP-ENV:Body>
+      <ns1:acr_JourneySearchResponse>
+         <return>
+            <originDestination>
+               <originCode>7171801</originCode>
+               <originName>Барселона</originName>
+               <originCountry>ES</originCountry>
+               <originDate>2016-12-20</originDate>
+               <destinationCode>7165410</destinationCode>
+               <destinationName>Салоу</destinationName>
+               <destinationCountry>ES</destinationCountry>
+            </originDestination>
+            <roundtripOriginDestination xsi:nil="true"/>
+            <journeys>
+               <journey>
+                  <journeyId>213865</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>09:30</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>10:39</arrivalTime>
+                     <duration>01:09</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>995.17</netFare>
+                     <markup>49.76</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>09:30</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>10:39</arrivalTime>
+                        <trainNumber>00697</trainNumber>
+                        <duration>01:09</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>TALGO</trainName>
+                        <trainCategories>
+                           <trainCategory>Talgo</trainCategory>
+                        </trainCategories>
+                        <amenities xsi:nil="true"/>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+               <journey>
+                  <journeyId>213866</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>09:33</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>10:54</arrivalTime>
+                     <duration>01:21</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>634.6</netFare>
+                     <markup>31.73</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>09:33</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>10:54</arrivalTime>
+                        <trainNumber>18093</trainNumber>
+                        <duration>01:21</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>R. EXPRES</trainName>
+                        <trainCategories>
+                           <trainCategory>R. EXPRES</trainCategory>
+                        </trainCategories>
+                        <amenities>
+                           <amenity>Bicycle allowed</amenity>
+                        </amenities>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+               <journey>
+                  <journeyId>213867</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>11:00</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>12:05</arrivalTime>
+                     <duration>01:05</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>569.7</netFare>
+                     <markup>28.49</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>11:00</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>12:05</arrivalTime>
+                        <trainNumber>01111</trainNumber>
+                        <duration>01:05</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>TALGO</trainName>
+                        <trainCategories>
+                           <trainCategory>Talgo</trainCategory>
+                        </trainCategories>
+                        <amenities xsi:nil="true"/>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+               <journey>
+                  <journeyId>213868</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>12:00</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>13:10</arrivalTime>
+                     <duration>01:10</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>995.17</netFare>
+                     <markup>49.76</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>12:00</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>13:10</arrivalTime>
+                        <trainNumber>00463</trainNumber>
+                        <duration>01:10</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>TALGO</trainName>
+                        <trainCategories>
+                           <trainCategory>Talgo</trainCategory>
+                        </trainCategories>
+                        <amenities xsi:nil="true"/>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+               <journey>
+                  <journeyId>213869</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>15:00</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>16:04</arrivalTime>
+                     <duration>01:04</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>1298.04</netFare>
+                     <markup>64.9</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>15:00</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>16:04</arrivalTime>
+                        <trainNumber>00165</trainNumber>
+                        <duration>01:04</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>TALGO</trainName>
+                        <trainCategories>
+                           <trainCategory>Talgo</trainCategory>
+                        </trainCategories>
+                        <amenities xsi:nil="true"/>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+               <journey>
+                  <journeyId>213870</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>17:00</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>18:05</arrivalTime>
+                     <duration>01:05</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>995.17</netFare>
+                     <markup>49.76</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>17:00</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>18:05</arrivalTime>
+                        <trainNumber>01171</trainNumber>
+                        <duration>01:05</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>TALGO</trainName>
+                        <trainCategories>
+                           <trainCategory>Talgo</trainCategory>
+                        </trainCategories>
+                        <amenities xsi:nil="true"/>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+               <journey>
+                  <journeyId>213871</journeyId>
+                  <journeyInfo>
+                     <departureCode>7171801</departureCode>
+                     <departureName>Барселона-Сантс</departureName>
+                     <departureCountry>ES</departureCountry>
+                     <departureDate>2016-12-20</departureDate>
+                     <departureTime>19:30</departureTime>
+                     <arrivalCode>7165410</arrivalCode>
+                     <arrivalName>Салоу</arrivalName>
+                     <arrivalCountry>ES</arrivalCountry>
+                     <arrivalDate>2016-12-20</arrivalDate>
+                     <arrivalTime>20:35</arrivalTime>
+                     <duration>01:05</duration>
+                     <faresAvailable>true</faresAvailable>
+                     <fareOfferType>1</fareOfferType>
+                     <netFare>850.94</netFare>
+                     <markup>42.55</markup>
+                     <resellerMarkup xsi:nil="true"/>
+                     <currency>UAH</currency>
+                     <ticketOptions>
+                        <ticketOption>ETK</ticketOption>
+                     </ticketOptions>
+                  </journeyInfo>
+                  <journeySegments>
+                     <journeySegment>
+                        <journeySegmentId>1</journeySegmentId>
+                        <departureCode>7171801</departureCode>
+                        <departureName>Барселона-Сантс</departureName>
+                        <departureCountry>ES</departureCountry>
+                        <departureDate>2016-12-20</departureDate>
+                        <departureTime>19:30</departureTime>
+                        <arrivalCode>7165410</arrivalCode>
+                        <arrivalName>Салоу</arrivalName>
+                        <arrivalCountry>ES</arrivalCountry>
+                        <arrivalDate>2016-12-20</arrivalDate>
+                        <arrivalTime>20:35</arrivalTime>
+                        <trainNumber>01391</trainNumber>
+                        <duration>01:05</duration>
+                        <transportType>Train</transportType>
+                        <operatorName>RenFe</operatorName>
+                        <vendorName xsi:nil="true"/>
+                        <trainName>TALGO</trainName>
+                        <trainCategories>
+                           <trainCategory>Talgo</trainCategory>
+                        </trainCategories>
+                        <amenities xsi:nil="true"/>
+                        <route xsi:nil="true"/>
+                     </journeySegment>
+                  </journeySegments>
+               </journey>
+            </journeys>
+            <roundtripJourneys/>
+         </return>
+      </ns1:acr_JourneySearchResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

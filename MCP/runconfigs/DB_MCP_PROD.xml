@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MCP suite" parallel="classes" thread-count="1">
+    <groups>
+        <run>
+            <include name="prod"/>
+        </run>
+    </groups>
+    <test name="DB_MCP_PROD">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TranitaliaRT"/>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_RT"/>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.AvailabilityForEN"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_OW"/>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowRT"/>
+        </classes>
+    </test>
+
+</suite>

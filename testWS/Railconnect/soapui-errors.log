@@ -1,0 +1,754 @@
+2016-12-16 17:19:45,394 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule.Segment.@SubType!=""
+        |          |    |                         |       |       |           |        |        |      |
+        |          |    |                         |       |       |           |        |        |      false
+        |          |    |                         |       |       |           |        |        groovy.util.slurpersupport.Attributes@5d2a341d (toString() == "")
+        |          |    |                         |       |       |           |        6000071801RNF03463
+        |          |    |                         |       |       |           60000718016000071801RNF03463
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule.Segment.@SubType!=""
+        |          |    |                         |       |       |           |        |        |      |
+        |          |    |                         |       |       |           |        |        |      false
+        |          |    |                         |       |       |           |        |        groovy.util.slurpersupport.Attributes@5d2a341d (toString() == "")
+        |          |    |                         |       |       |           |        6000071801RNF03463
+        |          |    |                         |       |       |           60000718016000071801RNF03463
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:13)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:20:08,937 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Product.@ID!=""
+        |          |    |                         |       |       |           |        | |
+        |          |    |                         |       |       |           |        | false
+        |          |    |                         |       |       |           |        groovy.util.slurpersupport.Attributes@7b23d195 (toString() == "")
+        |          |    |                         |       |       |           groovy.util.slurpersupport.NodeChildren@58422f54 (toString() == "")
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Product.@ID!=""
+        |          |    |                         |       |       |           |        | |
+        |          |    |                         |       |       |           |        | false
+        |          |    |                         |       |       |           |        groovy.util.slurpersupport.Attributes@7b23d195 (toString() == "")
+        |          |    |                         |       |       |           groovy.util.slurpersupport.NodeChildren@58422f54 (toString() == "")
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:15)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:20:49,364 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.DetailQuote.Price.@RedID!=""
+        |          |    |                         |       |       |           |       |           |      |    |
+        |          |    |                         |       |       |           |       |           |      |    false
+        |          |    |                         |       |       |           |       |           |      groovy.util.slurpersupport.Attributes@5decdef8 (toString() == "")
+        |          |    |                         |       |       |           |       |           groovy.util.slurpersupport.NodeChildren@a87f7a (toString() == "")
+        |          |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@3274ce65 (toString() == "")
+        |          |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       |       60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.DetailQuote.Price.@RedID!=""
+        |          |    |                         |       |       |           |       |           |      |    |
+        |          |    |                         |       |       |           |       |           |      |    false
+        |          |    |                         |       |       |           |       |           |      groovy.util.slurpersupport.Attributes@5decdef8 (toString() == "")
+        |          |    |                         |       |       |           |       |           groovy.util.slurpersupport.NodeChildren@a87f7a (toString() == "")
+        |          |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@3274ce65 (toString() == "")
+        |          |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       |       60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:16)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:25:40,832 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule[0].Segment.@SubType!=""
+        |          |    |                         |       |       |           |       |   |        |      |
+        |          |    |                         |       |       |           |       |   |        |      false
+        |          |    |                         |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@489917de (toString() == "")
+        |          |    |                         |       |       |           |       |   6000071801RNF03123
+        |          |    |                         |       |       |           |       60000718016000071801RNF03123
+        |          |    |                         |       |       |           60000718016000071801RNF0312371801600007180160000RNF03192
+        |          |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule[0].Segment.@SubType!=""
+        |          |    |                         |       |       |           |       |   |        |      |
+        |          |    |                         |       |       |           |       |   |        |      false
+        |          |    |                         |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@489917de (toString() == "")
+        |          |    |                         |       |       |           |       |   6000071801RNF03123
+        |          |    |                         |       |       |           |       60000718016000071801RNF03123
+        |          |    |                         |       |       |           60000718016000071801RNF0312371801600007180160000RNF03192
+        |          |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:13)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:02,109 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.PnrIdentification.@PnrReference==xmlSlurperEtalon.Body.RailConnect_IssueContractRQ.PnrIdentification.@PnrReference
+        |          |    |                           |       |       |                  |           | |                |    |                           |                  |
+        |          |    Booking not found           |       |       |                  |           | |                |    |                           |                  ?
+        |          Booking not found                |       |       |                  |           | |                |    |                           groovy.util.slurpersupport.NodeChildren@5c313f8d (toString() == "")
+        Booking not found                           |       |       |                  |           | |                |    groovy.util.slurpersupport.NodeChildren@ee6ac51 (toString() == "")
+                                                    |       |       |                  |           | |                groovy.util.slurpersupport.NodeChildren@5adb3505 (toString() == "")
+                                                    |       |       |                  |           | 1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99
+                                                    |       |       |                  |           false
+                                                    |       |       |                  groovy.util.slurpersupport.Attributes@39ec8444 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@6cf419a3 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@57cba448 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@54bbc0a9 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.PnrIdentification.@PnrReference==xmlSlurperEtalon.Body.RailConnect_IssueContractRQ.PnrIdentification.@PnrReference
+        |          |    |                           |       |       |                  |           | |                |    |                           |                  |
+        |          |    Booking not found           |       |       |                  |           | |                |    |                           |                  ?
+        |          Booking not found                |       |       |                  |           | |                |    |                           groovy.util.slurpersupport.NodeChildren@5c313f8d (toString() == "")
+        Booking not found                           |       |       |                  |           | |                |    groovy.util.slurpersupport.NodeChildren@ee6ac51 (toString() == "")
+                                                    |       |       |                  |           | |                groovy.util.slurpersupport.NodeChildren@5adb3505 (toString() == "")
+                                                    |       |       |                  |           | 1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99
+                                                    |       |       |                  |           false
+                                                    |       |       |                  groovy.util.slurpersupport.Attributes@39ec8444 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@6cf419a3 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@57cba448 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@54bbc0a9 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:02,280 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Passenger.Actor.@ID!=""
+        |          |    |                           |       |       |         |      | |
+        |          |    Booking not found           |       |       |         |      | false
+        |          Booking not found                |       |       |         |      groovy.util.slurpersupport.Attributes@24849a57 (toString() == "")
+        Booking not found                           |       |       |         groovy.util.slurpersupport.NodeChildren@62ee2f2 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7089c347 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3f74e35e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3fa290c5 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Passenger.Actor.@ID!=""
+        |          |    |                           |       |       |         |      | |
+        |          |    Booking not found           |       |       |         |      | false
+        |          Booking not found                |       |       |         |      groovy.util.slurpersupport.Attributes@24849a57 (toString() == "")
+        Booking not found                           |       |       |         groovy.util.slurpersupport.NodeChildren@62ee2f2 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7089c347 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3f74e35e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3fa290c5 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:02,417 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Product.@ID!=""
+        |          |    |                           |       |       |           |        | |
+        |          |    Booking not found           |       |       |           |        | false
+        |          Booking not found                |       |       |           |        groovy.util.slurpersupport.Attributes@2cdda696 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3f73758a (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@4d4fccef (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@5e0bf1ef (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@1f2315ae (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Product.@ID!=""
+        |          |    |                           |       |       |           |        | |
+        |          |    Booking not found           |       |       |           |        | false
+        |          Booking not found                |       |       |           |        groovy.util.slurpersupport.Attributes@2cdda696 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3f73758a (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@4d4fccef (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@5e0bf1ef (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@1f2315ae (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:02,564 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule.@ID!=""
+        |          |    |                           |       |       |           |         | |
+        |          |    Booking not found           |       |       |           |         | false
+        |          Booking not found                |       |       |           |         groovy.util.slurpersupport.Attributes@e42debd (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@6f0abc12 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@4ccb7f42 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@249e6aa6 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3cb1efbe (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule.@ID!=""
+        |          |    |                           |       |       |           |         | |
+        |          |    Booking not found           |       |       |           |         | false
+        |          Booking not found                |       |       |           |         groovy.util.slurpersupport.Attributes@e42debd (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@6f0abc12 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@4ccb7f42 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@249e6aa6 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3cb1efbe (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:02,698 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule.@ID!=""
+        |          |    |                           |       |       |           |         | |
+        |          |    Booking not found           |       |       |           |         | false
+        |          Booking not found                |       |       |           |         groovy.util.slurpersupport.Attributes@23f6f9f4 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@4375c8d1 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@169c8c6a (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@674b3acd (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@73e65689 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule.@ID!=""
+        |          |    |                           |       |       |           |         | |
+        |          |    Booking not found           |       |       |           |         | false
+        |          Booking not found                |       |       |           |         groovy.util.slurpersupport.Attributes@23f6f9f4 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@4375c8d1 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@169c8c6a (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@674b3acd (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@73e65689 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:02,856 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[0].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@38239f63 (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@3a48f60b (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@a593340 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@583d4e86 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7c410a65 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@1c45348 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4244a303 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[0].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@38239f63 (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@3a48f60b (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@a593340 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@583d4e86 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7c410a65 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@1c45348 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4244a303 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,005 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[1].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@2fa90df (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@2a62ca8a (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@76e62ba0 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@4af21d46 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1cd810af (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@20d2af24 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@67ae2bb5 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[1].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@2fa90df (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@2a62ca8a (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@76e62ba0 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@4af21d46 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1cd810af (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@20d2af24 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@67ae2bb5 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,178 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode
+        |          |    |                           |       |       |           |         |                    | |                |    |                         |       |       |           |         |
+        |          |    Booking not found           |       |       |           |         |                    | |                |    |                         |       |       |           002       002
+        |          Booking not found                |       |       |           |         |                    | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        Booking not found                           |       |       |           |         |                    | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    false
+                                                    |       |       |           |         groovy.util.slurpersupport.NodeChildren@6bf67d98 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@b39f2f7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1e67e7be (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@4c23057e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@14e1abdf (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode
+        |          |    |                           |       |       |           |         |                    | |                |    |                         |       |       |           |         |
+        |          |    Booking not found           |       |       |           |         |                    | |                |    |                         |       |       |           002       002
+        |          Booking not found                |       |       |           |         |                    | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        Booking not found                           |       |       |           |         |                    | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    false
+                                                    |       |       |           |         groovy.util.slurpersupport.NodeChildren@6bf67d98 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@b39f2f7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1e67e7be (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@4c23057e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@14e1abdf (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:11)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,398 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Pricing.TotalQuote.@TicketingExpirationTime==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.TotalQuote.@TicketingExpirationTime
+        |          |    |                           |       |       |           |       |           |                      | |                |    |                         |       |       |           |       |           |
+        |          |    Booking not found           |       |       |           |       |           |                      | |                |    |                         |       |       |           |       |           2016-12-16T15:59:43+00:00
+        |          Booking not found                |       |       |           |       |           |                      | |                |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@e9cfdff (toString() == "")
+        Booking not found                           |       |       |           |       |           |                      | |                |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      false
+                                                    |       |       |           |       |           groovy.util.slurpersupport.Attributes@d0390e5 (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NodeChildren@58f34dfa (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@4e5f8cc8 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@27c5e3f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3650db5c (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@748edcf1 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Pricing.TotalQuote.@TicketingExpirationTime==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.TotalQuote.@TicketingExpirationTime
+        |          |    |                           |       |       |           |       |           |                      | |                |    |                         |       |       |           |       |           |
+        |          |    Booking not found           |       |       |           |       |           |                      | |                |    |                         |       |       |           |       |           2016-12-16T15:59:43+00:00
+        |          Booking not found                |       |       |           |       |           |                      | |                |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@e9cfdff (toString() == "")
+        Booking not found                           |       |       |           |       |           |                      | |                |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      false
+                                                    |       |       |           |       |           groovy.util.slurpersupport.Attributes@d0390e5 (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NodeChildren@58f34dfa (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@4e5f8cc8 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@27c5e3f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3650db5c (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@748edcf1 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:11)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,572 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Fare.@ID!=""
+        |          |    |                           |       |       |           |     | |
+        |          |    Booking not found           |       |       |           |     | false
+        |          Booking not found                |       |       |           |     groovy.util.slurpersupport.Attributes@150506d6 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@4860abde (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@c9c3552 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@5e61d1b6 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@636f4f1a (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Fare.@ID!=""
+        |          |    |                           |       |       |           |     | |
+        |          |    Booking not found           |       |       |           |     | false
+        |          Booking not found                |       |       |           |     groovy.util.slurpersupport.Attributes@150506d6 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@4860abde (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@c9c3552 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@5e61d1b6 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@636f4f1a (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:12)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,652 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.MethodOfPayment.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@db1bc56 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3e12e57d (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@29bb16f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@64d4c5dc (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@6487861c (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.MethodOfPayment.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@db1bc56 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3e12e57d (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@29bb16f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@64d4c5dc (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@6487861c (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:8)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,737 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Ticketingoption.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@1d51184c (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@638016d5 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@5cce1d11 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@77249c69 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@622269b9 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Ticketingoption.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@1d51184c (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@638016d5 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@5cce1d11 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@77249c69 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@622269b9 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:8)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,840 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Contract[0].@ID!=""
+        |          |    |                           |       |       |           |       |    | |
+        |          |    Booking not found           |       |       |           |       |    | false
+        |          Booking not found                |       |       |           |       |    groovy.util.slurpersupport.Attributes@5ab455ce (toString() == "")
+        Booking not found                           |       |       |           |       groovy.util.slurpersupport.NoChildren@63a865c9 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@e26bbb7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@115478a7 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@69b64566 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4990f3b4 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Contract[0].@ID!=""
+        |          |    |                           |       |       |           |       |    | |
+        |          |    Booking not found           |       |       |           |       |    | false
+        |          Booking not found                |       |       |           |       |    groovy.util.slurpersupport.Attributes@5ab455ce (toString() == "")
+        Booking not found                           |       |       |           |       groovy.util.slurpersupport.NoChildren@63a865c9 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@e26bbb7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@115478a7 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@69b64566 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4990f3b4 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-16 17:31:03,948 ERROR [errorlog] Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Contract[1].@ID!=""
+        |          |    |                           |       |       |           |       |    | |
+        |          |    Booking not found           |       |       |           |       |    | false
+        |          Booking not found                |       |       |           |       |    groovy.util.slurpersupport.Attributes@3c58823b (toString() == "")
+        Booking not found                           |       |       |           |       groovy.util.slurpersupport.NoChildren@1e320381 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@65b3b8a5 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@dfe82db (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@75cf9005 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@7befbb36 (toString() == "")
+
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Contract[1].@ID!=""
+        |          |    |                           |       |       |           |       |    | |
+        |          |    Booking not found           |       |       |           |       |    | false
+        |          Booking not found                |       |       |           |       |    groovy.util.slurpersupport.Attributes@3c58823b (toString() == "")
+        Booking not found                           |       |       |           |       groovy.util.slurpersupport.NoChildren@1e320381 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@65b3b8a5 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@dfe82db (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@75cf9005 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@7befbb36 (toString() == "")
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at Script1.run(Script1.groovy:10)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:92)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

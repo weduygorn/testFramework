@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1575643063279" stop="1575643184196" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : MCP</name>
+    <title>Default Suite : MCP</title>
+    <test-cases>
+        <test-case start="1575643070512" stop="1575643183356" status="failed">
+            <name>UI_PNR_Prefix_THALYS_OneWay_MultiPax_OW_1A</name>
+            <failure>
+                <message>AssertionError: The following asserts failed:
+	BookingId is without prefix on the payment (MCP-ST9XL9) expected [true] but found [false]</message>
+                <stack-trace>java.lang.AssertionError: The following asserts failed:
+	BookingId is without prefix on the payment (MCP-ST9XL9) expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at tests.dbmcpCC.PnrPrefixUITests.UI_PNR_Prefix_THALYS_OneWay_MultiPax_OW_1A(PnrPrefixUITests.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1575643070566" stop="1575643071616" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en]</name>
+                    <title>Go to url https://dev2.mcp.local/en</title>
+                </step>
+                <step start="1575643071619" stop="1575643071808" status="passed">
+                    <name>setupSearchParams[Cities{id=8727100, name='Paris Nord'}, Cities{id=8814001, name='Brussels South'}, 0800]</name>
+                    <title>Setup search params</title>
+                </step>
+                <step start="1575643071820" stop="1575643079851" status="passed">
+                    <name>makeSearch[SearchParams{stationFrom='Paris Nord', stationTo='Brussels South', roundTrip=false, outwardDate='Fri, 13.12.2...]</name>
+                    <title>Search: Perform search with params</title>
+                    <steps>
+                        <step start="1575643071823" stop="1575643073182" status="passed">
+                            <name>setFrom[Paris Nord]</name>
+                            <title>Set From field: Paris Nord</title>
+                        </step>
+                        <step start="1575643073184" stop="1575643074099" status="passed">
+                            <name>setTo[Brussels South]</name>
+                            <title>Set To field: Brussels South</title>
+                        </step>
+                        <step start="1575643074100" stop="1575643074603" status="passed">
+                            <name>setOutwardDate[Fri, 13.12.2019]</name>
+                            <title>Set outward date: Fri, 13.12.2019</title>
+                        </step>
+                        <step start="1575643074605" stop="1575643075016" status="passed">
+                            <name>setOutwardTime[0800]</name>
+                            <title>Set outward time: 0800</title>
+                        </step>
+                        <step start="1575643075017" stop="1575643075136" status="passed">
+                            <name>setSearchMode[Dep]</name>
+                            <title>Set search mode</title>
+                        </step>
+                        <step start="1575643075138" stop="1575643075789" status="passed">
+                            <name>setPassengersData[SearchParams{stationFrom='Paris Nord', stationTo='Brussels South', roundTrip=false, outwardDate='Fri, ...]</name>
+                            <title>Set passengers</title>
+                            <steps>
+                                <step start="1575643075319" stop="1575643075789" status="passed">
+                                    <name>setPas1BirthDate[06121989]</name>
+                                    <title>Set first passenger birth date: 06121989</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1575643075790" stop="1575643076649" status="passed">
+                            <name>clickSearchButton</name>
+                            <title>Click search button</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1575643083743" stop="1575643084820" status="passed">
+                    <name>selectConnectionByTrain[[Connection{stations=Paris Nord
+Brussels South, time=08:25
+09:47, duration=01:22, changes=0, pro...]</name>
+                    <title>ConnectionsResult: Train(s) THALYS</title>
+                </step>
+                <step start="1575643085645" stop="1575643088425" status="passed">
+                    <name>selectOffer[[Offers{offerClass=2, product='THALYS
+Standard', offer='Standard Mini', conditions='Ticket may not be change...]</name>
+                    <title>Search offer: select offer:  Standard Mini for 2 class</title>
+                </step>
+                <step start="1575643088426" stop="1575643092113" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Upsale: Click continue button</title>
+                </step>
+                <step start="1575643092114" stop="1575643093100" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Ticket&amp;Reservation: Click continue button</title>
+                </step>
+                <step start="1575643093101" stop="1575643094119" status="passed">
+                    <name>fillPas1Data[Passenger{firstName='Johny', lastName='Depp', type='Adult', birthDate='06121989', salutation='Mr', email='v...]</name>
+                    <title>PassengerDetails: Fill 1 pax data Passenger{firstName='Johny', lastName='Depp', type='Adult', birthDate='06121989', salu...</title>
+                </step>
+                <step start="1575643094120" stop="1575643101259" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>PassengerDetails: Click continue button</title>
+                </step>
+                <step start="1575643101261" stop="1575643101488" status="passed">
+                    <name>agreeWithTermsAndConditions</name>
+                    <title>Check&amp;Book: Agree with terms&amp;conditions</title>
+                </step>
+                <step start="1575643101489" stop="1575643106956" status="passed">
+                    <name>clickProceedToPayment</name>
+                    <title>Check&amp;Book: Proceed to Payment</title>
+                </step>
+                <step start="1575643106958" stop="1575643107127" status="passed">
+                    <name>selectPaymentType[CreditCard]</name>
+                    <title>Payment: select payment type CreditCard</title>
+                </step>
+                <step start="1575643107128" stop="1575643179782" status="passed">
+                    <name>fillPayDataAndBuyByCreditCard</name>
+                    <title>Payment: set payment data</title>
+                </step>
+                <step start="1575643179783" stop="1575643179818" status="passed">
+                    <name>getFailedPaymentBookingId</name>
+                    <title>Payment: get bookingID if payment or ticketing is failed</title>
+                </step>
+                <step start="1575643179863" stop="1575643180046" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en/ordersearch]</name>
+                    <title>Go to url https://dev2.mcp.local/en/ordersearch</title>
+                </step>
+                <step start="1575643180882" stop="1575643181067" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en/ordersearch]</name>
+                    <title>Go to url https://dev2.mcp.local/en/ordersearch</title>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Fail listener on - International Booking" source="c27e8341-d277-483e-9845-56e3548a33bc-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="MCP"/>
+                <label name="testClass" value="tests.dbmcpCC.PnrPrefixUITests"/>
+                <label name="testMethod" value="UI_PNR_Prefix_THALYS_OneWay_MultiPax_OW_1A"/>
+                <label name="host" value="IEVL569"/>
+                <label name="thread" value="24956@IEVL569.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

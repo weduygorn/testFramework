@@ -1,0 +1,135 @@
+Status: FAILED
+Time Taken: 2201
+Size: 703
+Timestamp: Fri Dec 16 17:28:02 EET 2016
+TestStep: Booking
+
+----------------- Messages ------------------------------
+[Contains] Missing token [<PnrIdentification] in Response
+
+----------------- Properties ------------------------------
+Endpoint: https://dev.amr.local/railconnect/book
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : dev.amr.local
+Accept-Encoding : gzip,deflate
+Content-Length : 5876
+Content-Type : application/soap+xml;charset=UTF-8;action="https://demo-amr.contentrail.com/railconnect/book"
+
+
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:sel="SellSegmentRQ">
+   <soap:Header>
+      <auth>
+         <secretKey>1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99</secretKey>
+      </auth>
+   </soap:Header>
+   <soap:Body>
+      <sel:RailConnect_SellSegmentRQ Distributor="?" Language="?" ReservationOptions="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <!--1 to 99 repetitions:-->
+         <Passenger>
+            <!--1 to 9 repetitions:-->
+            <Actor ID="1">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="2">
+               <Name FirstName="Name" LastName="LastName" DateOfBirth="2015-01-01" Title="Mr"/>
+            </Actor>
+            <Contact ID="1" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="2" PaxIDs="2">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+         </Passenger>
+         <Reservation ID="1">
+            <!--1 to 99 repetitions:-->
+            <Product ID="PRODUCT_1" Type="002" Class="002" MainClass="T" AccomType="002"/>
+            <Product ID="PRODUCT_6" Type="002" Class="001" MainClass="P" AccomType="002"/>
+            <Schedule ID="SCHEDULE_1">
+               <Departure xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">60000</LocationCode>
+               </Departure>
+               <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">71801</LocationCode>
+               </Arrival>
+               <Segment ID="SEGMENT_220895" Type="002" Inventory="RNF">
+                  <Departure xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" DateTime="2016-12-20T06:20:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">60000</LocationCode>
+                  </Departure>
+                  <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" DateTime="2016-12-20T09:34:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">71801</LocationCode>
+                  </Arrival>
+                  <ServiceProviderCode xsi:type="sell:StringLength1to16" xmlns:sell="sell_segment_ctr">RNF</ServiceProviderCode>
+                  <Identifier xsi:type="sell:StringLength1to8" xmlns:sell="sell_segment_ctr">03463</Identifier>
+               </Segment>
+            </Schedule>
+            <Schedule ID="SCHEDULE_2">
+               <Departure xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">71801</LocationCode>
+               </Departure>
+               <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">60000</LocationCode>
+               </Arrival>
+               <Segment ID="SEGMENT_220935" Type="002" Inventory="RNF">
+                  <Departure xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" DateTime="2016-12-24T19:00:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">71801</LocationCode>
+                  </Departure>
+                  <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" DateTime="2016-12-24T22:00:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">60000</LocationCode>
+                  </Arrival>
+                  <ServiceProviderCode xsi:type="sell:StringLength1to16" xmlns:sell="sell_segment_ctr">RNF</ServiceProviderCode>
+                  <Identifier xsi:type="sell:StringLength1to8" xmlns:sell="sell_segment_ctr">03192</Identifier>
+               </Segment>
+            </Schedule>
+            <Pricing ID="PRICING_SOLUTION_1" PrdIDs="PRODUCT_1" PaxIDs="1" SegIDs="SEGMENT_220895">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1508839]SRPID[18113]</BookingToken>
+            </Pricing>
+            <Pricing ID="PRICING_SOLUTION_1" PrdIDs="PRODUCT_1" PaxIDs="2" SegIDs="SEGMENT_220895">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL021" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1508839]SRPID[18114]</BookingToken>
+            </Pricing>
+            <Pricing ID="PRICING_SOLUTION_381" PrdIDs="PRODUCT_9" PaxIDs="1" SegIDs="SEGMENT_220935">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL010|AG01VLA|A04" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1509223]SRPID[18113]</BookingToken>
+            </Pricing>
+            <Pricing ID="PRICING_SOLUTION_381" PrdIDs="PRODUCT_9" PaxIDs="2" SegIDs="SEGMENT_220935">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL021" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1509223]SRPID[18114]</BookingToken>
+            </Pricing>
+         </Reservation>
+      </sel:RailConnect_SellSegmentRQ>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Server : nginx/1.10.0
+Cache-Control : no-cache
+Connection : keep-alive
+Set-Cookie : PHPSESSID=c817a40ec74392214cf0c14881f1baac; expires=Sat, 17-Dec-2016 03:26:47 GMT; Max-Age=43200; path=/; secure; HttpOnly
+#status# : HTTP/1.1 200 OK
+Content-Length : 703
+Date : Fri, 16 Dec 2016 15:26:47 GMT
+Content-Type : text/xml; charset=UTF-8
+X-Powered-By : PHP/7.0.13
+
+
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="sell_segment_ctr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="SellSegmentRS" xmlns:enc="http://www.w3.org/2003/05/soap-encoding">
+   <env:Body>
+      <ns2:RailConnect_SellSegmentRS TimeStamp="2016-12-16T15:26:47+00:00" Version="?" CorrelationID="?" xsi:type="ns2:RailConnect_SellSegmentRS">
+         <Failure xsi:type="ns2:Failure">
+            <Warning Code="1000" xsi:type="ns1:WarningType"/>
+            <Error xsi:type="ns1:ErrorType" Code="1000" Type="Provider">Confirmation impossible.</Error>
+         </Failure>
+      </ns2:RailConnect_SellSegmentRS>
+   </env:Body>
+</env:Envelope>

@@ -1,0 +1,40 @@
+Status: FAILED
+Time Taken: 164
+Size: 0
+Timestamp: Fri Dec 16 17:20:49 EET 2016
+TestStep: Groovy Script Fare
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.DetailQuote.Price.@RedID!=""
+        |          |    |                         |       |       |           |       |           |      |    |
+        |          |    |                         |       |       |           |       |           |      |    false
+        |          |    |                         |       |       |           |       |           |      groovy.util.slurpersupport.Attributes@5decdef8 (toString() == "")
+        |          |    |                         |       |       |           |       |           groovy.util.slurpersupport.NodeChildren@a87f7a (toString() == "")
+        |          |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@3274ce65 (toString() == "")
+        |          |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       |       60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.DetailQuote.Price.@RedID!=""
+        |          |    |                         |       |       |           |       |           |      |    |
+        |          |    |                         |       |       |           |       |           |      |    false
+        |          |    |                         |       |       |           |       |           |      groovy.util.slurpersupport.Attributes@5decdef8 (toString() == "")
+        |          |    |                         |       |       |           |       |           groovy.util.slurpersupport.NodeChildren@a87f7a (toString() == "")
+        |          |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@3274ce65 (toString() == "")
+        |          |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       |       60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+
+error at line: 16

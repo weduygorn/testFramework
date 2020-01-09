@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OBB" parallel="classes" thread-count="3">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+    <test name="RJ">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowDeepLink"/>
+        </classes>
+    </test>
+    <test name="EN">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.AvailabilityForEN"/>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.OBB_EN_deeplink"/>
+        </classes>
+    </test>
+    <test name="NJ">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.OBB_NJ_deeplink"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckCompartments"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckAccoPreferences"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckReservation"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckValidationMessages"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultRT"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultChild"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowAdultChildInfant"/>
+        </classes>
+    </test>
+    <test name="IC">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.OBB_NJ_deeplink"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckCompartments"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckAccoPreferences"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckReservation"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckValidationMessages"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultRT"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultChild"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowAdultChildInfant"/>
+        </classes>
+    </test>
+    <test name="BUS_SWISS">
+        <classes>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.IC.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.deeplink.IC.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.deeplink.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.deeplink.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.deeplink.IR.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.IR.FullFlowWithAdult"/>
+        </classes>
+    </test>
+
+</suite>

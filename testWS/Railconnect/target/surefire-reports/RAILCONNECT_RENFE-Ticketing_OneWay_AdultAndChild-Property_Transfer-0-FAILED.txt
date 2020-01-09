@@ -1,0 +1,15 @@
+Status: FAILED
+Time Taken: 2
+Size: 0
+Timestamp: Fri Dec 16 17:30:36 EET 2016
+TestStep: Property Transfer
+Error:com.eviware.soapui.impl.wsdl.teststeps.PropertyTransferException: Missing match for Target XPath [//PrnIdentification/@PnrReference]
+
+----------------- Messages ------------------------------
+Error performing transfer [prn] - Missing match for Target XPath [//PrnIdentification/@PnrReference]
+----------------------------------------------------
+prn transferred [[Missing match for Target XPath [//PrnIdentification/@PnrReference]]] from [Booking.Response] to [Ticketing.Request]
+------------ source path -------------
+//PrnIdentification/@PnrReference
+------------ target path -------------
+//PrnIdentification/@PnrReference

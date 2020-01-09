@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+	<groups>
+		<run>
+			<include name="dev"/>
+			<include name="test"/>
+			<include name="demo"/>
+			<include name="stage"/>
+		</run>
+	</groups>
+	<test name="Search">
+		<classes>
+			<class name="tests.search.SearchConnectionByDeparture"/>
+			<class name="tests.search.SearchConnectionByArrival"/>
+			<class name="tests.search.ScrollToEarlierConnections"/>
+			<class name="tests.search.ScrollToLaterConnections"/>
+			<class name="tests.search.ScrollToNextDayConnections"/>
+			<class name="tests.search.ScrollToPrevDayConnections"/>
+			<class name="tests.search.PurchaseWithoutOfferSelection"/>
+			<class name="tests.search.CompareCorrIdWithTicketShopBack"/>
+		</classes>
+	</test>
+
+	<test name="DP">
+		<classes>
+			<class name="tests.dataLayer.CheckDigitalData"/>
+		</classes>
+	</test>
+
+	<test name="JumpInLink validation">
+		<classes>
+			<class name="tests.jumpInLink.CheckValidationParams"/>
+		</classes>
+	</test>
+
+	<test name="Translations">
+		<classes>
+			<class name="tests.localization.CheckTranslations"/>
+		</classes>
+
+
+	</test>
+</suite>

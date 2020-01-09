@@ -1,0 +1,40 @@
+Status: FAILED
+Time Taken: 159
+Size: 0
+Timestamp: Fri Dec 16 17:25:40 EET 2016
+TestStep: Groovy Script Segment attrs assert
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule[0].Segment.@SubType!=""
+        |          |    |                         |       |       |           |       |   |        |      |
+        |          |    |                         |       |       |           |       |   |        |      false
+        |          |    |                         |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@489917de (toString() == "")
+        |          |    |                         |       |       |           |       |   6000071801RNF03123
+        |          |    |                         |       |       |           |       60000718016000071801RNF03123
+        |          |    |                         |       |       |           60000718016000071801RNF0312371801600007180160000RNF03192
+        |          |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule[0].Segment.@SubType!=""
+        |          |    |                         |       |       |           |       |   |        |      |
+        |          |    |                         |       |       |           |       |   |        |      false
+        |          |    |                         |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@489917de (toString() == "")
+        |          |    |                         |       |       |           |       |   6000071801RNF03123
+        |          |    |                         |       |       |           |       60000718016000071801RNF03123
+        |          |    |                         |       |       |           60000718016000071801RNF0312371801600007180160000RNF03192
+        |          |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+
+error at line: 13

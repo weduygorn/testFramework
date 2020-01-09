@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PAO" parallel="classes" thread-count="3">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+    <test name="E2E">
+        <classes>
+            <class name="tests.providerscenarios.PAO.FullFlowAdultChildInfantOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.FullFlowOWDeeplink"/>
+            <class name="tests.providerscenarios.PAO.FullFlowAdultChildRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.FullFlowRTDeepLink"/>
+        </classes>
+    </test>
+    <test name="EUROSTAR">
+        <classes>
+            <class name="tests.providerscenarios.PAO.EurostarFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.EurostarFullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.PAO.EurostarFullFlowRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.EurostarFullFlowRTDeepLink"/>
+
+        </classes>
+    </test>
+    <test name="THALYS">
+        <classes>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.ThalysFullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.ThalysFullFlowRTDeepLink"/>
+        </classes>
+    </test>
+
+</suite>

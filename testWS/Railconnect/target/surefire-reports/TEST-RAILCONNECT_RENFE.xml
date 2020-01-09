@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.RAILCONNECT_RENFE" tests="72" failures="40" errors="0" time="944.905"><properties><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/><property name="java.vm.version" value="25.111-b14"/><property name="maven.multiModuleProjectDirectory" value="C:\WORK\amr-tests\test"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="guice.disable.misplaced.annotation.check" value="true"/><property name="path.separator" value=";"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="user.script" value=""/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value=""/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="C:\WORK\amr-tests\test"/><property name="java.runtime.version" value="1.8.0_111-b14"/><property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/><property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="C:\Users\osinskyi\AppData\Local\Temp\"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="user.variant" value=""/><property name="os.name" value="Windows 10"/><property name="classworlds.conf" value="C:\Program Files\maven\bin\..\bin\m2.conf"/><property name="sun.jnu.encoding" value="Cp1251"/><property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\maven\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;."/><property name="sun.awt.enableExtraMouseButtons" value="true"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.0"/><property name="user.home" value="C:\Users\osinskyi"/><property name="user.timezone" value="Europe/Helsinki"/><property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/><property name="file.encoding" value="Cp1251"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="C:\Program Files\maven\bin\..\boot\plexus-classworlds-2.5.2.jar"/><property name="user.name" value="osinskyi"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher site"/><property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.windows.WToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_111"/><property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/><property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="sun.stderr.encoding" value="cp866"/><property name="maven.home" value="C:\Program Files\maven\bin\.."/><property name="file.separator" value="\"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.stdout.encoding" value="cp866"/><property name="sun.desktop" value="windows"/><property name="sun.cpu.isalist" value="amd64"/></properties><testcase name="Search_OneWay" time="32.002"/><testcase name="SearchCriteria One_Way" time="13.433"/><testcase name="Search_RT" time="52.907"/><testcase name="SearchCriteria RT" time="55.392"/><testcase name="SearchInvalidSecretKey" time="0.206"/><testcase name="Booking_OneWay_1pas" time="13.507"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Groovy Script Segment attrs assert Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule.Segment.@SubType!=""
+        |          |    |                         |       |       |           |        |        |      |
+        |          |    |                         |       |       |           |        |        |      false
+        |          |    |                         |       |       |           |        |        groovy.util.slurpersupport.Attributes@5d2a341d (toString() == "")
+        |          |    |                         |       |       |           |        6000071801RNF03463
+        |          |    |                         |       |       |           60000718016000071801RNF03463
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+error at line: 13
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_OptionalContact" time="10.655"/><testcase name="Booking_OneWay_Actor Data" time="12.762"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Groovy Script Product assert Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Product.@ID!=""
+        |          |    |                         |       |       |           |        | |
+        |          |    |                         |       |       |           |        | false
+        |          |    |                         |       |       |           |        groovy.util.slurpersupport.Attributes@7b23d195 (toString() == "")
+        |          |    |                         |       |       |           groovy.util.slurpersupport.NodeChildren@58422f54 (toString() == "")
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com456456?60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+error at line: 15
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_9pas+99Contacts" time="27.254"/><testcase name="Booking_OneWay_Reduction" time="13.038"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Groovy Script Fare Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.DetailQuote.Price.@RedID!=""
+        |          |    |                         |       |       |           |       |           |      |    |
+        |          |    |                         |       |       |           |       |           |      |    false
+        |          |    |                         |       |       |           |       |           |      groovy.util.slurpersupport.Attributes@5decdef8 (toString() == "")
+        |          |    |                         |       |       |           |       |           groovy.util.slurpersupport.NodeChildren@a87f7a (toString() == "")
+        |          |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@3274ce65 (toString() == "")
+        |          |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       |       60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          |    qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        |          qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+        qwe@qwe.com60000718016000071801RNF03463002http://www.renfe.com/viajeros/tarifas/
+
+error at line: 16
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_WithAccomodationPreferencesSeatCenter" time="9.634"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains 1] Missing token [AccommodationPreferences] in Response
+[Contains 3] Missing token [<SeatOptions] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_WithAccomodationPreferencesSeatAisle" time="8.846"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains 1] Missing token [AccommodationPreferences] in Response
+[Contains 3] Missing token [<SeatOptions] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_WithAccomodationPreferencesSeatWindow" time="10.061"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains 1] Missing token [AccommodationPreferences] in Response
+[Contains 3] Missing token [<SeatOptions] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_MethodOfPayment" time="12.312"/><testcase name="Booking_OneWay_AdultAndChild" time="8.456"/><testcase name="Booking_OneWay_AdultAndChildFree" time="10.578"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Success] Missing token [<Success] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_moreThen9pas_NEG" time="14.281"/><testcase name="Booking_OneWay_withNoBookingToken_NEG" time="7.706"/><testcase name="Booking_No_pas_info_NEG" time="7.399"/><testcase name="Booking_OneWay_NoPasID_NEG" time="7.678"/><testcase name="Booking_OneWay_NoPassName_NEG" time="8.456"/><testcase name="Booking_OneWay_NoPassSurname_NEG" time="7.878"/><testcase name="Booking_OneWay_passNameContainsNotAllowedSymbols_NEG" time="11.587"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [Name contains special or numeric symbols] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_passSurNameContainsNotAllowedSymbols_NEG" time="11.558"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [Name contains special or numeric symbols] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_AccomodationPreferences_MissedID_NEG" time="10.788"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed ID] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_AccomodationPreferences_MissedType_NEG" time="11.9"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed Type attribute] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_FirstNameTooLong_NEG" time="11.464"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [FirstName too long] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_LastNameTooLong_NEG" time="10.627"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [LastName too long] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_MissedActorNEG" time="8.239"/><testcase name="Booking_OneWay_9pas+100Contacts NEG" time="8.967"/><testcase name="Booking_OneWay_missedSchedule_NEG" time="6.961"/><testcase name="Booking_OneWay_missedScheduleId_NEG" time="9.64"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed Schedule ID] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_missedScheduleLocationName_NEG" time="8.712"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed LocationName] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_missedScheduleLocationCode_NEG" time="9.276"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed schedule location code] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_missedSegmentID_NEG" time="13.743"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed Segment ID] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_missedScheduleDepartureDateTime_NEG" time="9.138"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed date time] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_missedProduct_NEG" time="8.621"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[missed] Missing token [missed product] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking_OneWay_missedProductID_NEG" time="8.116"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[missed product id] Missing token [missed product id] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT 1pas not ida y vuelta" time="16.803"><failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Groovy Script Segment attrs assert Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule[0].Segment.@SubType!=""
+        |          |    |                         |       |       |           |       |   |        |      |
+        |          |    |                         |       |       |           |       |   |        |      false
+        |          |    |                         |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@489917de (toString() == "")
+        |          |    |                         |       |       |           |       |   6000071801RNF03123
+        |          |    |                         |       |       |           |       60000718016000071801RNF03123
+        |          |    |                         |       |       |           60000718016000071801RNF0312371801600007180160000RNF03192
+        |          |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+
+error at line: 13
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT 1pas ida y vuelta" time="11.354"/><testcase name="Booking RT 1pas optional contact" time="15.435"/><testcase name="Booking RT 9pas 99contacts" time="21.507"/><testcase name="Booking RT reduction" time="15.259"/><testcase name="Booking RT with Acom Pref Seat" time="15.113"/><testcase name="Booking RT method of payment" time="12.612"/><testcase name="Booking RT AdultAndChild" time="21.838"/><testcase name="Ticketing OneWay_1pas" time="9.539"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains1] Missing token [<Passenger] in Response
+[Contains 2] Missing token [<Reservation] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT AdultAndChildFree" time="20.17"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT more 9 pas NEG" time="4.792"/><testcase name="Booking RT No Pas Info NEG" time="9.783"/><testcase name="Booking RT no schedule location name NEG" time="16.151"><failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT No Pas ID NEG" time="10.047"/><testcase name="Booking RT no BKTK NEG" time="9.369"/><testcase name="Booking RT No Pas Name NEG" time="9.494"/><testcase name="Booking RT No Pas Surname NEG" time="9.512"/><testcase name="Booking RT missed schedule ID NEG" time="14.343"><failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed schedule ID] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT missed schedule segment ID NEG" time="14.666"><failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [missed segment id] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT missed segment inventory NEG" time="14.118"><failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[missed segment inventory] Missing token [missed segment inventory] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Booking RT 1pas not matched NEG" time="13.201"/><testcase name="Ticketing OneWay_1pas optional fields" time="9.235"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains1] Missing token [<Passenger] in Response
+[Contains 2] Missing token [<Reservation] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing_OneWay_9pas+99Contacts" time="9.346"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing_OneWay_AdultAndChild" time="7.763"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Property Transfer Failed</b></h3><pre>Error performing transfer [prn] - Missing match for Target XPath [//PrnIdentification/@PnrReference]
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing_OneWay_AdultAndChildFree" time="9.54"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Success] Missing token [<Success] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing RT 1pas not ida y vuelta" time="17.255"><failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Property Transfer Failed</b></h3><pre>Error performing transfer [prn] - Missing match for Target XPath [//PrnIdentification/@PnrReference]
+</pre><hr/><h3><b>Ticketing Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification ] in Response
+</pre><hr/><h3><b>Groovy Script PRNidentification Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.PnrIdentification.@PnrReference==xmlSlurperEtalon.Body.RailConnect_IssueContractRQ.PnrIdentification.@PnrReference
+        |          |    |                           |       |       |                  |           | |                |    |                           |                  |
+        |          |    Booking not found           |       |       |                  |           | |                |    |                           |                  ?
+        |          Booking not found                |       |       |                  |           | |                |    |                           groovy.util.slurpersupport.NodeChildren@5c313f8d (toString() == "")
+        Booking not found                           |       |       |                  |           | |                |    groovy.util.slurpersupport.NodeChildren@ee6ac51 (toString() == "")
+                                                    |       |       |                  |           | |                groovy.util.slurpersupport.NodeChildren@5adb3505 (toString() == "")
+                                                    |       |       |                  |           | 1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99
+                                                    |       |       |                  |           false
+                                                    |       |       |                  groovy.util.slurpersupport.Attributes@39ec8444 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@6cf419a3 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@57cba448 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@54bbc0a9 (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script passenger Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Passenger.Actor.@ID!=""
+        |          |    |                           |       |       |         |      | |
+        |          |    Booking not found           |       |       |         |      | false
+        |          Booking not found                |       |       |         |      groovy.util.slurpersupport.Attributes@24849a57 (toString() == "")
+        Booking not found                           |       |       |         groovy.util.slurpersupport.NodeChildren@62ee2f2 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7089c347 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3f74e35e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3fa290c5 (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script product Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Product.@ID!=""
+        |          |    |                           |       |       |           |        | |
+        |          |    Booking not found           |       |       |           |        | false
+        |          Booking not found                |       |       |           |        groovy.util.slurpersupport.Attributes@2cdda696 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3f73758a (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@4d4fccef (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@5e0bf1ef (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@1f2315ae (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script schedule1 Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule.@ID!=""
+        |          |    |                           |       |       |           |         | |
+        |          |    Booking not found           |       |       |           |         | false
+        |          Booking not found                |       |       |           |         groovy.util.slurpersupport.Attributes@e42debd (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@6f0abc12 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@4ccb7f42 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@249e6aa6 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3cb1efbe (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script schedule2 Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule.@ID!=""
+        |          |    |                           |       |       |           |         | |
+        |          |    Booking not found           |       |       |           |         | false
+        |          Booking not found                |       |       |           |         groovy.util.slurpersupport.Attributes@23f6f9f4 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@4375c8d1 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@169c8c6a (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@674b3acd (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@73e65689 (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script segment1 Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[0].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@38239f63 (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@3a48f60b (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@a593340 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@583d4e86 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7c410a65 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@1c45348 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4244a303 (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script segment2 Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[1].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@2fa90df (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@2a62ca8a (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@76e62ba0 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@4af21d46 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1cd810af (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@20d2af24 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@67ae2bb5 (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script reduction Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode
+        |          |    |                           |       |       |           |         |                    | |                |    |                         |       |       |           |         |
+        |          |    Booking not found           |       |       |           |         |                    | |                |    |                         |       |       |           002       002
+        |          Booking not found                |       |       |           |         |                    | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        Booking not found                           |       |       |           |         |                    | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    false
+                                                    |       |       |           |         groovy.util.slurpersupport.NodeChildren@6bf67d98 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@b39f2f7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1e67e7be (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@4c23057e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@14e1abdf (toString() == "")
+
+error at line: 11
+</pre><hr/><h3><b>Groovy Script pricing Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Pricing.TotalQuote.@TicketingExpirationTime==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Pricing.TotalQuote.@TicketingExpirationTime
+        |          |    |                           |       |       |           |       |           |                      | |                |    |                         |       |       |           |       |           |
+        |          |    Booking not found           |       |       |           |       |           |                      | |                |    |                         |       |       |           |       |           2016-12-16T15:59:43+00:00
+        |          Booking not found                |       |       |           |       |           |                      | |                |    |                         |       |       |           |       groovy.util.slurpersupport.NodeChildren@e9cfdff (toString() == "")
+        Booking not found                           |       |       |           |       |           |                      | |                |    |                         |       |       |           http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |       |           |                      false
+                                                    |       |       |           |       |           groovy.util.slurpersupport.Attributes@d0390e5 (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NodeChildren@58f34dfa (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@4e5f8cc8 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@27c5e3f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3650db5c (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@748edcf1 (toString() == "")
+
+error at line: 11
+</pre><hr/><h3><b>Groovy Script fare Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Fare.@ID!=""
+        |          |    |                           |       |       |           |     | |
+        |          |    Booking not found           |       |       |           |     | false
+        |          Booking not found                |       |       |           |     groovy.util.slurpersupport.Attributes@150506d6 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@4860abde (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@c9c3552 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@5e61d1b6 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@636f4f1a (toString() == "")
+
+error at line: 12
+</pre><hr/><h3><b>Groovy Script MOP Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.MethodOfPayment.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@db1bc56 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3e12e57d (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@29bb16f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@64d4c5dc (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@6487861c (toString() == "")
+
+error at line: 8
+</pre><hr/><h3><b>Groovy Script Ticketing option Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Ticketingoption.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@1d51184c (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@638016d5 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@5cce1d11 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@77249c69 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@622269b9 (toString() == "")
+
+error at line: 8
+</pre><hr/><h3><b>Groovy Script Contract1 Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Contract[0].@ID!=""
+        |          |    |                           |       |       |           |       |    | |
+        |          |    Booking not found           |       |       |           |       |    | false
+        |          Booking not found                |       |       |           |       |    groovy.util.slurpersupport.Attributes@5ab455ce (toString() == "")
+        Booking not found                           |       |       |           |       groovy.util.slurpersupport.NoChildren@63a865c9 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@e26bbb7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@115478a7 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@69b64566 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4990f3b4 (toString() == "")
+
+error at line: 10
+</pre><hr/><h3><b>Groovy Script Contract2 Failed</b></h3><pre>Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Contract[1].@ID!=""
+        |          |    |                           |       |       |           |       |    | |
+        |          |    Booking not found           |       |       |           |       |    | false
+        |          Booking not found                |       |       |           |       |    groovy.util.slurpersupport.Attributes@3c58823b (toString() == "")
+        Booking not found                           |       |       |           |       groovy.util.slurpersupport.NoChildren@1e320381 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@65b3b8a5 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@dfe82db (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@75cf9005 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@7befbb36 (toString() == "")
+
+error at line: 10
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing RT 1pas ida y vuelta" time="8.752"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Property Transfer Failed</b></h3><pre>Error performing transfer [prn] - Missing match for Target XPath [//PrnIdentification/@PnrReference]
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing RT 9pas 99contacts" time="17.778"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Property Transfer Failed</b></h3><pre>Error performing transfer [prn] - Missing match for Target XPath [//PrnIdentification/@PnrReference]
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing RT AdultAndChild" time="18.555"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Copy of Property Transfer Failed</b></h3><pre>Error performing transfer [prn] - Missing match for Target XPath [//PrnIdentification/@PnrReference]
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing RT AdultAndChildFree" time="20.815"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing missed PrnReference NEG" time="8.976"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains1] Missing token [<Passenger] in Response
+[Contains 2] Missing token [<Reservation] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing missed Inventory NEG" time="9.699"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains1] Missing token [<Passenger] in Response
+[Contains 2] Missing token [<Reservation] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing missed FormatDel Type NEG" time="8.748"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains1] Missing token [<Passenger] in Response
+[Contains 2] Missing token [<Reservation] in Response
+</pre><hr/>]]></failure></testcase><testcase name="Ticketing missed FormatDel DMD NEG" time="9.559"><failure type="Cancelling due to failed test step" message="Cancelling due to failed test step"><![CDATA[<h3><b>Booking Failed</b></h3><pre>[Contains] Missing token [<PnrIdentification] in Response
+[Contains1] Missing token [<Passenger] in Response
+[Contains 2] Missing token [<Reservation] in Response
+</pre><hr/>]]></failure></testcase></testsuite>

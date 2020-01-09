@@ -1,0 +1,30 @@
+Status: FAILED
+Time Taken: 146
+Size: 0
+Timestamp: Fri Dec 16 17:31:02 EET 2016
+TestStep: Groovy Script passenger
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Passenger.Actor.@ID!=""
+        |          |    |                           |       |       |         |      | |
+        |          |    Booking not found           |       |       |         |      | false
+        |          Booking not found                |       |       |         |      groovy.util.slurpersupport.Attributes@24849a57 (toString() == "")
+        Booking not found                           |       |       |         groovy.util.slurpersupport.NodeChildren@62ee2f2 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7089c347 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3f74e35e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3fa290c5 (toString() == "")
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Passenger.Actor.@ID!=""
+        |          |    |                           |       |       |         |      | |
+        |          |    Booking not found           |       |       |         |      | false
+        |          Booking not found                |       |       |         |      groovy.util.slurpersupport.Attributes@24849a57 (toString() == "")
+        Booking not found                           |       |       |         groovy.util.slurpersupport.NodeChildren@62ee2f2 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7089c347 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@3f74e35e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@3fa290c5 (toString() == "")
+
+error at line: 10

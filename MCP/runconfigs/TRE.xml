@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TRE" parallel="classes" thread-count="3">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+    <test name="E2E">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TranitaliaRT"/>
+        </classes>
+    </test>
+    <test name="Cancel booking">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaCancelBookingOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaCancelBookingRT"/>
+        </classes>
+    </test>
+    <test name="Validation Back button">
+        <classes>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaBackButtonFlowRT"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaBackButtonsFlowOW"/>
+        </classes>
+    </test>
+
+</suite>

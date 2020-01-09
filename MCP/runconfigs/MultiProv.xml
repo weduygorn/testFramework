@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MultiProv" parallel="classes" thread-count="1">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+    <test name="PAO+NVS">
+        <classes>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_RT"/>
+        </classes>
+    </test>
+    <test name="TRE+NVS">
+        <classes>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_RT"/>
+        </classes>
+    </test>
+    <test name="PAO+TRE">
+        <classes>
+            <class name="tests.providerscenarios.multiprovider.PAO_TRE_OW"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_TRE_RT"/>
+        </classes>
+    </test>
+</suite>

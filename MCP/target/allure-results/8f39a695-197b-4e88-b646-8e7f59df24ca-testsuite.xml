@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1574951510985" stop="1574951583002" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : MCP</name>
+    <title>Default Suite : MCP</title>
+    <test-cases>
+        <test-case start="1574951518264" stop="1574951582159" status="passed">
+            <name>UI_BahnBonus_NVS_BC_Jahres_Card_MonoSeg_RT_2A</name>
+            <steps>
+                <step start="1574951518425" stop="1574951519587" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en]</name>
+                    <title>Go to url https://dev2.mcp.local/en</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951519591" stop="1574951519591" status="passed">
+                    <name>setupSearchParams[Cities{id=8020347, name='Munich Hbf'}, Cities{id=8503000, name='Zürich Hb'}, 1100]</name>
+                    <title>Setup search params</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951519599" stop="1574951543222" status="passed">
+                    <name>makeSearch[SearchParams{stationFrom='Munich Hbf', stationTo='Zürich Hb', roundTrip=true, outwardDate='Thu, 05.12.2019', ...]</name>
+                    <title>Search: Perform search with params</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1574951519600" stop="1574951520641" status="passed">
+                            <name>setFrom[Munich Hbf]</name>
+                            <title>Set From field: Munich Hbf</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951520643" stop="1574951521510" status="passed">
+                            <name>setTo[Zürich Hb]</name>
+                            <title>Set To field: Zürich Hb</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951521512" stop="1574951522006" status="passed">
+                            <name>setOutwardDate[Thu, 05.12.2019]</name>
+                            <title>Set outward date: Thu, 05.12.2019</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951522008" stop="1574951522400" status="passed">
+                            <name>setOutwardTime[1100]</name>
+                            <title>Set outward time: 1100</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951522401" stop="1574951522481" status="passed">
+                            <name>activateRoundTrip</name>
+                            <title>Activate round trip</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951522483" stop="1574951522891" status="passed">
+                            <name>setInwardDate[Fri, 06.12.2019]</name>
+                            <title>Set invard date: Fri, 06.12.2019</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951522892" stop="1574951523289" status="passed">
+                            <name>setInwardTime[1100]</name>
+                            <title>Set inward time: 1100</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951523290" stop="1574951523385" status="passed">
+                            <name>setSearchMode[Dep]</name>
+                            <title>Set search mode</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574951523386" stop="1574951524067" status="passed">
+                            <name>setPassengersData[SearchParams{stationFrom='Munich Hbf', stationTo='Zürich Hb', roundTrip=true, outwardDate='Thu, 05.12....]</name>
+                            <title>Set passengers</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1574951523569" stop="1574951524067" status="passed">
+                                    <name>setPas1BirthDate[28111989]</name>
+                                    <title>Set first passenger birth date: 28111989</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1574951524068" stop="1574951524936" status="passed">
+                            <name>clickSearchButton</name>
+                            <title>Click search button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1574951546403" stop="1574951547594" status="passed">
+                    <name>selectConnectionByTrain[[Connection{stations=Munich Hbf
+Zürich Hb, time=12:14
+16:58, duration=04:44, changes=0, product=...]</name>
+                    <title>ConnectionsResult: Train(s) EC</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951550675" stop="1574951551803" status="passed">
+                    <name>selectConnectionByTrain[[Connection{stations=Zürich Hb
+Munich Hbf, time=13:02
+17:46, duration=04:44, changes=0, product=...]</name>
+                    <title>ConnectionsResult: Train(s) EC</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951552430" stop="1574951555513" status="passed">
+                    <name>selectFirstAvailableOffer[[Offers{offerClass=2, product='EC
+2nd class', offer='Super Sparpreis Europa Schweiz', conditio...]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951555514" stop="1574951558475" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Upsale: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951559075" stop="1574951562866" status="passed">
+                    <name>selectFirstAvailableOffer[[Offers{offerClass=2, product='EC
+2nd class', offer='Super Sparpreis Europa Schweiz', conditio...]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951562867" stop="1574951566637" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Upsale: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951566639" stop="1574951567185" status="passed">
+                    <name>clickReturnJourneyButton</name>
+                    <title>Ticket&amp;Reservation: Click return journey button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951567186" stop="1574951568263" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Ticket&amp;Reservation: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951568264" stop="1574951569319" status="passed">
+                    <name>fillPas1Data[Passenger{firstName='Johny', lastName='Depp', type='Adult', birthDate='28111989', salutation='Mr', email='v...]</name>
+                    <title>PassengerDetails: Fill 1 pax data Passenger{firstName='Johny', lastName='Depp', type='Adult', birthDate='28111989', salu...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951569320" stop="1574951570145" status="passed">
+                    <name>collectBahnBonuses[438972803091]</name>
+                    <title>collect Bahn Bonuses</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574951570254" stop="1574951581348" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>PassengerDetails: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Success listener on - International Booking" source="9a23c7e0-b825-4535-a08e-504bec5953c9-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="MCP"/>
+                <label name="testClass" value="tests.dbmcpCC.BahnBonusPointsUITests"/>
+                <label name="testMethod" value="UI_BahnBonus_NVS_BC_Jahres_Card_MonoSeg_RT_2A"/>
+                <label name="host" value="IEVL569"/>
+                <label name="thread" value="28908@IEVL569.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UI_layer" parallel="classes" thread-count="3">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+
+    <test name="Connection Result page">
+        <classes>
+            <class name="tests.search.ConnectionDetailsLaterAssertionOW"/>
+            <class name="tests.search.ConnectionResultAssertionOW"/>
+            <class name="tests.search.ConnectionResultAssertionOWByArrival"/>
+            <class name="tests.search.ConnectionResultAssertionRT"/>
+            <class name="tests.search.ConnectionResultAssertionRTByArrival"/>
+        </classes>
+    </test>
+    <test name="Select offers page">
+        <classes>
+            <class name="tests.search.SelectOfferesOWAssertion"/>
+            <class name="tests.search.SelectOffersRTAssertions"/>
+            <class name="tests.search.ShowDetailsOWAssertion"/>
+            <class name="tests.search.ShowDetailsRTAssertion"/>
+            <class name="tests.search.SearchResultsSameAfterRefreshTest"/>
+            <class name="tests.search.ShowConditionDetailsOWAssertion"/>
+            <class name="tests.search.ShowConditionDetailsRTAssertion"/>
+        </classes>
+    </test>
+    <test name="Ticket and Reservation page">
+        <classes>
+            <class name="tests.ticketandreservation.TicketAndReservationPageOWAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationPageRTAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationTicketOWAssertion"/>
+            <class name="tests.ticketandreservation.TicketandReservationBahnCardReservationAssertion"/>
+            <class name="tests.ticketandreservation.CheckReservationPriceForDB1class"/>
+        </classes>
+    </test>
+    <test name="Passenger details page">
+        <classes>
+            <class name="tests.passengerdetails.PassengerDetailsOW5PaxDetailsAssertion"/>
+            <class name="tests.passengerdetails.PassengerDetailsRTAssertionAndValidation"/>
+        </classes>
+    </test>
+    <test name="Ticketing page">
+        <classes>
+            <class name="tests.ticketing.TicketPageDetailsAssertion"/>
+        </classes>
+    </test>
+    <test name="Booking and confirmation page">
+        <classes>
+            <class name="tests.bookingconfirmation.BookingConfirmationDetailsAssertion"/>
+            <class name="tests.bookingconfirmation.BookingConfirmation5PaxBahnIncludedNoReservationAssertion"/>
+        </classes>
+    </test>
+    <test name="Retrieve page">
+        <classes>
+            <class name="tests.bookingretrieverefund.RetrieveBookingDetailsAssertion"/>
+        </classes>
+    </test>
+    <test name="Header">
+        <classes>
+            <class name="tests.search.TopHeaderTest"/>
+            <class name="tests.search.NavigateHeaderTest"/>
+            <class name="tests.search.BreadcrumbsHeaderTest"/>
+        </classes>
+    </test>
+    <test name="FAQ">
+        <classes>
+            <class name="tests.search.FAQAssertions"/>
+        </classes>
+    </test>
+    <test name="Reduction Cards">
+        <classes>
+            <class name="tests.search.MixedBahnCard1classMessageAssertion"/>
+            <class name="tests.search.MixedBahnCard2classMessageAssertion"/>
+        </classes>
+    </test>
+    <test name="DeepLink">
+        <classes>
+            <class name="tests.deeplink.DeepLinkInvalidSecureTokenTest"/>
+            <class name="tests.deeplink.DeepLinkInvalidParametersTest"/>
+            <class name="tests.deeplink.DeepLinkInvalidReductionCardTest"/>
+            <class name="tests.deeplink.DeepLinkParametersInterpretationAssertion"/>
+            <class name="tests.db_deeplink.DeepLinkToDBTests"/>
+        </classes>
+    </test>
+    <test name="Tealium">
+        <classes>
+            <class name="tests.search.ConnectionPageTealiumAssertionOW"/>
+            <class name="tests.search.ConnectionPageTealiumAssertionRT"/>
+            <class name="tests.search.SearchPageTealiumAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationRTTealiumTest"/>
+            <class name="tests.ticketandreservation.TicketAndReservationOWTealiumTest"/>
+            <class name="tests.passengerdetails.PassengerDetailsRTTealiumTest"/>
+            <class name="tests.bookingconfirmation.BookingConfirmationPageTealiumTest"/>
+            <class name="tests.payment.PaymentPageTealiumTest"/>
+            <class name="tests.ticketing.TicketPageDetailsTealiumTest"/>
+        </classes>
+    </test>
+
+</suite>

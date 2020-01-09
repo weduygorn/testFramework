@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1575643289292" stop="1575643399409" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : MCP</name>
+    <title>Default Suite : MCP</title>
+    <test-cases>
+        <test-case start="1575643296890" stop="1575643398655" status="passed">
+            <name>UI_PNR_Prefix_THALYS_OneWay_MultiPax_OW_1A</name>
+            <steps>
+                <step start="1575643296925" stop="1575643298019" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en]</name>
+                    <title>Go to url https://dev2.mcp.local/en</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643298024" stop="1575643298205" status="passed">
+                    <name>setupSearchParams[Cities{id=8727100, name='Paris Nord'}, Cities{id=8814001, name='Brussels South'}, 0800]</name>
+                    <title>Setup search params</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643298213" stop="1575643306184" status="passed">
+                    <name>makeSearch[SearchParams{stationFrom='Paris Nord', stationTo='Brussels South', roundTrip=false, outwardDate='Fri, 13.12.2...]</name>
+                    <title>Search: Perform search with params</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1575643298215" stop="1575643299093" status="passed">
+                            <name>setFrom[Paris Nord]</name>
+                            <title>Set From field: Paris Nord</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1575643299094" stop="1575643299982" status="passed">
+                            <name>setTo[Brussels South]</name>
+                            <title>Set To field: Brussels South</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1575643299983" stop="1575643300465" status="passed">
+                            <name>setOutwardDate[Fri, 13.12.2019]</name>
+                            <title>Set outward date: Fri, 13.12.2019</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1575643300467" stop="1575643300878" status="passed">
+                            <name>setOutwardTime[0800]</name>
+                            <title>Set outward time: 0800</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1575643300880" stop="1575643300987" status="passed">
+                            <name>setSearchMode[Dep]</name>
+                            <title>Set search mode</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1575643300988" stop="1575643301646" status="passed">
+                            <name>setPassengersData[SearchParams{stationFrom='Paris Nord', stationTo='Brussels South', roundTrip=false, outwardDate='Fri, ...]</name>
+                            <title>Set passengers</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1575643301163" stop="1575643301646" status="passed">
+                                    <name>setPas1BirthDate[06121989]</name>
+                                    <title>Set first passenger birth date: 06121989</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1575643301648" stop="1575643302462" status="passed">
+                            <name>clickSearchButton</name>
+                            <title>Click search button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1575643310042" stop="1575643311126" status="passed">
+                    <name>selectConnectionByTrain[[Connection{stations=Paris Nord
+Brussels South, time=08:25
+09:47, duration=01:22, changes=0, pro...]</name>
+                    <title>ConnectionsResult: Train(s) THALYS</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643311811" stop="1575643315300" status="passed">
+                    <name>selectOffer[[Offers{offerClass=2, product='THALYS
+Standard', offer='Standard Mini', conditions='Ticket may not be change...]</name>
+                    <title>Search offer: select offer:  Standard Mini for 2 class</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643315301" stop="1575643318715" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Upsale: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643318716" stop="1575643319604" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>Ticket&amp;Reservation: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643319606" stop="1575643320676" status="passed">
+                    <name>fillPas1Data[Passenger{firstName='Johny', lastName='Depp', type='Adult', birthDate='06121989', salutation='Mr', email='v...]</name>
+                    <title>PassengerDetails: Fill 1 pax data Passenger{firstName='Johny', lastName='Depp', type='Adult', birthDate='06121989', salu...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643320677" stop="1575643328543" status="passed">
+                    <name>clickContinueButton</name>
+                    <title>PassengerDetails: Click continue button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643328544" stop="1575643328686" status="passed">
+                    <name>agreeWithTermsAndConditions</name>
+                    <title>Check&amp;Book: Agree with terms&amp;conditions</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643328687" stop="1575643334149" status="passed">
+                    <name>clickProceedToPayment</name>
+                    <title>Check&amp;Book: Proceed to Payment</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643334150" stop="1575643334302" status="passed">
+                    <name>selectPaymentType[CreditCard]</name>
+                    <title>Payment: select payment type CreditCard</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643334303" stop="1575643395685" status="passed">
+                    <name>fillPayDataAndBuyByCreditCard</name>
+                    <title>Payment: set payment data</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643395687" stop="1575643395778" status="passed">
+                    <name>getFailedPaymentBookingId</name>
+                    <title>Payment: get bookingID if payment or ticketing is failed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643395785" stop="1575643395970" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en/ordersearch]</name>
+                    <title>Go to url https://dev2.mcp.local/en/ordersearch</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643396858" stop="1575643397017" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en/ordersearch]</name>
+                    <title>Go to url https://dev2.mcp.local/en/ordersearch</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1575643398526" stop="1575643398612" status="passed">
+                    <name>isElementPresent[Corr Id]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Success listener on - International Booking" source="db316c16-b038-404e-a8a7-004a7ed5e522-attachment.png" type="image/png"/>
+                <attachment title="CorrId" source="5531a445-ee6b-4699-b197-613df3bb9ed1-attachment.html" type="text/html"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="MCP"/>
+                <label name="testClass" value="tests.dbmcpCC.PnrPrefixUITests"/>
+                <label name="testMethod" value="UI_PNR_Prefix_THALYS_OneWay_MultiPax_OW_1A"/>
+                <label name="host" value="IEVL569"/>
+                <label name="thread" value="21808@IEVL569.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

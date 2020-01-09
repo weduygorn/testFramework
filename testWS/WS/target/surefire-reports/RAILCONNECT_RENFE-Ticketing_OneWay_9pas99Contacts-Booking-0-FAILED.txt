@@ -1,0 +1,550 @@
+Status: FAILED
+Time Taken: 1958
+Size: 703
+Timestamp: Fri Dec 16 17:30:27 EET 2016
+TestStep: Booking
+
+----------------- Messages ------------------------------
+[Contains] Missing token [<PnrIdentification] in Response
+
+----------------- Properties ------------------------------
+Endpoint: https://dev.amr.local/railconnect/book
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : dev.amr.local
+Accept-Encoding : gzip,deflate
+Content-Length : 24400
+Content-Type : application/soap+xml;charset=UTF-8;action="https://demo-amr.contentrail.com/railconnect/book"
+
+
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:sel="SellSegmentRQ">
+   <soap:Header>
+      <auth>
+         <secretKey>1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99</secretKey>
+      </auth>
+   </soap:Header>
+   <soap:Body>
+      <sel:RailConnect_SellSegmentRQ Distributor="?" Language="?" ReservationOptions="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <!--1 to 99 repetitions:-->
+         <Passenger>
+            <!--1 to 9 repetitions:-->
+            <Actor ID="1">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="2">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="3">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="4">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="5">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="6">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="7">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="8">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Actor ID="9">
+               <Name FirstName="Name" LastName="LastName"/>
+            </Actor>
+            <Contact ID="1" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="2" PaxIDs="2">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="3" PaxIDs="3">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="4" PaxIDs="4">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="5" PaxIDs="5">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="6" PaxIDs="6">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="7" PaxIDs="7">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="8" PaxIDs="8">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="9" PaxIDs="9">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="10" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="11" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="12" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="13" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="14" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="15" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="16" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="17" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="18" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="19" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="20" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="21" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="22" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="23" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="24" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="25" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="26" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="27" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="28" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="29" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="30" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="31" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="32" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="33" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="34" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="35" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="36" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="37" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="38" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="39" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="40" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="41" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="42" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="43" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="44" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="45" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="46" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="47" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="48" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="49" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="50" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="51" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="52" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="53" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="54" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="55" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="56" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="57" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="58" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="59" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="60" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="61" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="62" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="63" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="64" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="65" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="66" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="67" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="68" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="69" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="70" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="71" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="72" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="73" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="74" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="75" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="76" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="77" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="78" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="79" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="80" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="81" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="82" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="83" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="84" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="85" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="86" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="87" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="88" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="89" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="90" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="91" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="92" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="93" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="94" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="95" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="96" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="97" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="98" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+            <Contact ID="99" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>qwe@qwe.com</Email>
+            </Contact>
+         </Passenger>
+         <Reservation ID="q">
+            <!--1 to 99 repetitions:-->
+            <Product ID="PRODUCT_1" Type="002" Class="002" MainClass="T" AccomType="002"/>
+            <Schedule ID="SCHEDULE_1">
+               <Departure xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">60000</LocationCode>
+               </Departure>
+               <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">71801</LocationCode>
+               </Arrival>
+               <Segment ID="SEGMENT_1" Type="002" Inventory="RNF">
+                  <Departure xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" DateTime="2016-12-18T06:20:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">60000</LocationCode>
+                  </Departure>
+                  <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" DateTime="2016-12-18T09:29:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">71801</LocationCode>
+                  </Arrival>
+                  <ServiceProviderCode xsi:type="sell:StringLength1to16" xmlns:sell="sell_segment_ctr">RNF</ServiceProviderCode>
+                  <Identifier xsi:type="sell:StringLength1to8" xmlns:sell="sell_segment_ctr">03463</Identifier>
+               </Segment>
+            </Schedule>
+            <Pricing ID="1" PrdIDs="PRODUCT_1" PaxIDs="1" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG34VLA|C09-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18135]</BookingToken>
+            </Pricing>
+            <Pricing ID="2" PrdIDs="PRODUCT_1" PaxIDs="2" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18136]</BookingToken>
+            </Pricing>
+            <Pricing ID="3" PrdIDs="PRODUCT_1" PaxIDs="3" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18137]</BookingToken>
+            </Pricing>
+            <Pricing ID="4" PrdIDs="PRODUCT_1" PaxIDs="4" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18138]</BookingToken>
+            </Pricing>
+            <Pricing ID="5" PrdIDs="PRODUCT_1" PaxIDs="5" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18139]</BookingToken>
+            </Pricing>
+            <Pricing ID="6" PrdIDs="PRODUCT_1" PaxIDs="6" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18140]</BookingToken>
+            </Pricing>
+            <Pricing ID="7" PrdIDs="PRODUCT_1" PaxIDs="7" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18141]</BookingToken>
+            </Pricing>
+            <Pricing ID="8" PrdIDs="PRODUCT_1" PaxIDs="8" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18142]</BookingToken>
+            </Pricing>
+            <Pricing ID="9" PrdIDs="PRODUCT_1" PaxIDs="9" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG33VLA|C08-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1511854]SRPID[18143]</BookingToken>
+            </Pricing>
+         </Reservation>
+      </sel:RailConnect_SellSegmentRQ>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Server : nginx/1.10.0
+Cache-Control : no-cache
+Connection : keep-alive
+Set-Cookie : PHPSESSID=d26c23191cab8969ca138ea677c01246; expires=Sat, 17-Dec-2016 03:29:12 GMT; Max-Age=43200; path=/; secure; HttpOnly
+#status# : HTTP/1.1 200 OK
+Content-Length : 703
+Date : Fri, 16 Dec 2016 15:29:12 GMT
+Content-Type : text/xml; charset=UTF-8
+X-Powered-By : PHP/7.0.13
+
+
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="sell_segment_ctr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="SellSegmentRS" xmlns:enc="http://www.w3.org/2003/05/soap-encoding">
+   <env:Body>
+      <ns2:RailConnect_SellSegmentRS TimeStamp="2016-12-16T15:29:12+00:00" Version="?" CorrelationID="?" xsi:type="ns2:RailConnect_SellSegmentRS">
+         <Failure xsi:type="ns2:Failure">
+            <Warning Code="1000" xsi:type="ns1:WarningType"/>
+            <Error xsi:type="ns1:ErrorType" Code="1000" Type="Provider">Confirmation impossible.</Error>
+         </Failure>
+      </ns2:RailConnect_SellSegmentRS>
+   </env:Body>
+</env:Envelope>

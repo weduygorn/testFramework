@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke">
+	<groups>
+		<run>
+			<include name="prod"/>
+		</run>
+	</groups>
+	<test name="Search">
+		<classes>
+			<class name="tests.search.SearchConnectionByDeparture"/>
+		</classes>
+	</test>
+
+
+	<test name="Reporting">
+		<classes>
+			<class name="tests.reporting.CheckSpecialEvents"/>
+		</classes>
+	</test>
+</suite>

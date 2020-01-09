@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1574944060911" stop="1574944245975" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : MCP</name>
+    <title>Default Suite : MCP</title>
+    <test-cases>
+        <test-case start="1574944069172" stop="1574944245726" status="passed">
+            <name>UI_BahnBonus_NVS_SBB_PAO_MultiSegWithBahnBonus_OW_1A</name>
+            <steps>
+                <step start="1574944069224" stop="1574944070409" status="passed">
+                    <name>gotoUrl[https://dev2.mcp.local/en]</name>
+                    <title>Go to url https://dev2.mcp.local/en</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574944070411" stop="1574944070656" status="passed">
+                    <name>setupSearchParams[Cities{id=8108000, name='Vienna Central Station'}, Cities{id=8775100, name='Marseille St. Charles'}, 1...]</name>
+                    <title>Setup search params</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1574944070670" stop="1574944103264" status="passed">
+                    <name>makeSearch[SearchParams{stationFrom='Vienna Central Station', stationTo='Marseille St. Charles', roundTrip=false, outwar...]</name>
+                    <title>Search: Perform search with params</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1574944070672" stop="1574944071982" status="passed">
+                            <name>setFrom[Vienna Central Station]</name>
+                            <title>Set From field: Vienna Central Station</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574944071984" stop="1574944072959" status="passed">
+                            <name>setTo[Marseille St. Charles]</name>
+                            <title>Set To field: Marseille St. Charles</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574944072960" stop="1574944073497" status="passed">
+                            <name>setOutwardDate[Thu, 12.12.2019]</name>
+                            <title>Set outward date: Thu, 12.12.2019</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574944073500" stop="1574944073933" status="passed">
+                            <name>setOutwardTime[11:17]</name>
+                            <title>Set outward time: 11:17</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574944073935" stop="1574944074040" status="passed">
+                            <name>setSearchMode[Dep]</name>
+                            <title>Set search mode</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574944074041" stop="1574944074724" status="passed">
+                            <name>setPassengers[SearchParams{stationFrom='Vienna Central Station', stationTo='Marseille St. Charles', roundTrip=false, out...]</name>
+                            <title>Set passengers</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1574944074237" stop="1574944074724" status="passed">
+                                    <name>setPas1BirthDate[28111989]</name>
+                                    <title>Set first passenger birth date: 28111989</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1574944074725" stop="1574944075534" status="passed">
+                            <name>clickSearchButton</name>
+                            <title>Click search button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1574944075535" stop="1574944103264" status="passed">
+                            <name>checkSearchIsFinished</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1574944105731" stop="1574944107205" status="passed">
+                    <name>selectConnectionByTrain[[Connection{stations=Vienna Central Station
+Marseille St. Charles, time=11:30
+09:42, duration=22...]</name>
+                    <title>ConnectionsResult: Train(s) RJX, EC, TGV, TGV DUPLEX</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Success listener on - International Booking" source="52d8cdaf-9978-4892-b3b0-8ef9a716690e-attachment.png" type="image/png"/>
+                <attachment title="CorrId" source="2107e1df-71e1-433d-a307-9407c08acdf4-attachment.html" type="text/html"/>
+                <attachment title="CorrId" source="38f9b7cb-0079-432c-9e4d-1c9c779b4c62-attachment.html" type="text/html"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="MCP"/>
+                <label name="testClass" value="tests.dbmcpCC.BahnBonusPointsUITests"/>
+                <label name="testMethod" value="UI_BahnBonus_NVS_SBB_PAO_MultiSegWithBahnBonus_OW_1A"/>
+                <label name="host" value="IEVL569"/>
+                <label name="thread" value="28868@IEVL569.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1574944060911" stop="1574944245969" status="broken">
+            <name>Default Suite : MCP</name>
+            <title>Default Suite : MCP</title>
+            <failure>
+                <message>Test suite was interrupted, some test cases may be lost</message>
+            </failure>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

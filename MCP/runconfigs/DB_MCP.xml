@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MCP suite" parallel="classes" thread-count="3">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+    <test name="DB_MCP">
+        <classes>
+            <class name="tests.search.ConnectionDetailsLaterAssertionOW"/>
+            <class name="tests.search.ConnectionPageTealiumAssertionOW"/>
+            <class name="tests.search.ConnectionPageTealiumAssertionRT"/>
+            <class name="tests.search.ConnectionResultAssertionOW"/>
+            <class name="tests.search.ConnectionResultAssertionOWByArrival"/>
+            <class name="tests.search.ConnectionResultAssertionRT"/>
+            <class name="tests.search.ConnectionResultAssertionRTByArrival"/>
+            <class name="tests.search.SearchPageTealiumAssertion"/>
+            <class name="tests.search.WelcomePopupAssertion"/>
+            <class name="tests.search.SelectOfferesOWAssertion"/>
+            <class name="tests.search.SelectOffersRTAssertions"/>
+            <class name="tests.search.TopHeaderTest"/>
+            <class name="tests.search.NavigateHeaderTest"/>
+            <class name="tests.search.BreadcrumbsHeaderTest"/>
+            <class name="tests.search.SelectOffersPageTealiumAssertionOW"/>
+            <class name="tests.search.SelectOffersPageTealiumOWAfterMCPLinkOpening"/>
+            <class name="tests.search.SelectOffersPageTealiumAssertionRT"/>
+            <class name="tests.search.FAQAssertions"/>
+            <class name="tests.search.MixedBahnCard1classMessageAssertion"/>
+            <class name="tests.search.MixedBahnCard2classMessageAssertion"/>
+            <class name="tests.search.ShowDetailsOWAssertion"/>
+            <class name="tests.search.ShowDetailsRTAssertion"/>
+            <class name="tests.search.SearchResultsSameAfterRefreshTest"/>
+            <class name="tests.search.ShowConditionDetailsOWAssertion"/>
+            <class name="tests.search.ShowConditionDetailsRTAssertion"/>
+            <class name="tests.deeplink.DeepLinkInvalidSecureTokenTest"/>
+            <class name="tests.deeplink.DeepLinkInvalidParametersTest"/>
+            <class name="tests.deeplink.DeepLinkInvalidReductionCardTest"/>
+            <class name="tests.deeplink.DeepLinkParametersInterpretationAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationRTTealiumTest"/>
+            <class name="tests.ticketandreservation.TicketAndReservationOWTealiumTest"/>
+            <class name="tests.ticketandreservation.TicketAndReservationPageOWAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationPageRTAssertion"/>
+            <class name="tests.ticketandreservation.TicketAndReservationTicketOWAssertion"/>
+            <class name="tests.ticketandreservation.TicketandReservationBahnCardReservationAssertion"/>
+            <class name="tests.ticketandreservation.CheckReservationPriceForDB1class"/>
+            <class name="tests.passengerdetails.PassengerDetailsOW5PaxDetailsAssertion"/>
+            <class name="tests.passengerdetails.PassengerDetailsRTAssertionAndValidation"/>
+            <class name="tests.passengerdetails.PassengerDetailsRTTealiumTest"/>
+            <class name="tests.bookingconfirmation.BookingConfirmationPageTealiumTest"/>
+            <class name="tests.bookingconfirmation.BookingConfirmationDetailsAssertion"/>
+            <class name="tests.bookingconfirmation.BookingConfirmation5PaxBahnIncludedNoReservationAssertion"/>
+            <class name="tests.bookingretrieverefund.RetrieveBookingDetailsAssertion"/>
+            <class name="tests.db_deeplink.DeepLinkToDBTests"/>
+            <class name="tests.providerscenarios.Treniatalia.TranitaliaRT"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaBackButtonFlowRT"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaBackButtonsFlowOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaCancelBookingOW"/>
+            <class name="tests.providerscenarios.Treniatalia.TrenitaliaCancelBookingRT"/>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.TRE_NVS_RT"/>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.RJ.FullFlowDeepLink"/>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.AvailabilityForEN"/>
+            <class name="tests.providerscenarios.OBB_OneWay.EN.OBB_EN_deeplink"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdultChildInfant"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.OBB_NJ_deeplink"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckCompartments"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckAccoPreferences"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckReservation"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.CheckValidationMessages"/>
+            <class name="tests.providerscenarios.OBB_OneWay.NJ.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultRT"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowWithAdultChild"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.NJ.FullFlowAdultChildInfant"/>
+            <class name="tests.providerscenarios.PAO.FullFlowAdultChildInfantOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.FullFlowOWDeeplink"/>
+            <class name="tests.providerscenarios.PAO.FullFlowAdultChildRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.FullFlowRTDeepLink"/>
+            <class name="tests.providerscenarios.PAO.EurostarFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.EurostarFullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.PAO.EurostarFullFlowRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.EurostarFullFlowRTDeepLink"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_OW"/>
+            <class name="tests.providerscenarios.multiprovider.PAO_NVS_RT"/>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowOW"/>
+            <class name="tests.providerscenarios.PAO.deeplink.ThalysFullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.PAO.ThalysFullFlowRT"/>
+            <class name="tests.providerscenarios.PAO.deeplink.ThalysFullFlowRTDeepLink"/>
+            <class name="tests.orderSearch.CheckBookingAvailability"/>
+            <!--//BUS_Swiss_routes//-->
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.IC.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.deeplink.IC.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_OneWay.BUS_Swiss_routes.deeplink.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.deeplink.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.deeplink.IR.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.ICB.FullFlowWithAdult"/>
+            <class name="tests.providerscenarios.OBB_RoundTrip.BUS_Swiss_routes.IR.FullFlowWithAdult"/>
+
+        </classes>
+    </test>
+
+</suite>

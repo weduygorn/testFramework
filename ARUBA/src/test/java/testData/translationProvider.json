@@ -1,0 +1,92 @@
+{
+  "heading": {
+    "de": "Sparpreissuche",
+    "fr": "Recherche prix avantageux",
+    "it": "Cerca prezzo conveniente",
+    "en": "Saving offers search"
+  },
+
+  "searchDepartureMode": {
+    "de": "Abfahrt",
+    "it": "Partenza",
+    "fr": "Départ",
+    "en": "Departure"
+    },
+
+  "earlierButton": {
+    "de": "Frühere Verbindungen",
+    "it": "Collegamenti precedenti",
+    "fr": "Relations précédentes",
+    "en": "Earlier connections"
+  },
+
+  "laterButton": {
+    "de": "Spätere Verbindungen",
+    "it": "Collegamenti successivi",
+    "fr": "Relations suivantes",
+    "en": "Later connections"
+  },
+
+  "connectionDep": {
+    "de": "Ab",
+    "it": "Partenza",
+    "fr": "Dép",
+    "en": "Dep."
+  },
+
+  "connectionArr": {
+    "de": "An",
+    "it": "Arrivo",
+    "fr": "Arr.",
+    "en": "Arr."
+  },
+
+  "connectionChange": {
+    "de": "Umsteigen",
+    "it": "Cambio",
+    "fr": "Сhangement",
+    "en": "change"
+  },
+
+  "connectionDuration": {
+    "de": "Dauer",
+    "it": "Durata",
+    "fr": "Durée",
+    "en": "Duration"
+  },
+
+  "connection2Class": {
+    "de": "2. Klasse",
+    "it": "2a Classe",
+    "fr": "2nde Сlasse",
+    "en": "2nd class"
+  },
+
+  "connection1Class": {
+    "de": "1. Klasse",
+    "it": "1a Classe",
+    "fr": "1ère Сlasse",
+    "en": "1st class"
+  },
+
+  "connectionFrom": {
+    "de": "ab",
+    "it": "a partire da",
+    "fr": "à partir de",
+    "en": "from"
+  },
+
+  "purchaseButton": {
+    "de": "Kaufen",
+    "it": "Acquisto",
+    "fr": "Acheter",
+    "en": "Purchase"
+  },
+
+  "backButton": {
+    "de": "Zurück",
+    "it": "Indietro",
+    "fr": "Retour",
+    "en": "Back"
+  }
+}

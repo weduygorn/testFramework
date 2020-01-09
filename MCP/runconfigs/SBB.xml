@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SBB" parallel="classes" thread-count="3">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+
+        </run>
+    </groups>
+    <test name="E2E">
+        <classes>
+            <class name="tests.providerscenarios.SBB.FullFlowAdultChildInfantOW"/>
+            <class name="tests.providerscenarios.SBB.FullFlowAdultChildRT"/>
+            <class name="tests.providerscenarios.SBB.deeplink.FullFlowOWDeepLink"/>
+            <class name="tests.providerscenarios.SBB.deeplink.FullFlowRTDeepLink"/>
+        </classes>
+    </test>
+
+</suite>

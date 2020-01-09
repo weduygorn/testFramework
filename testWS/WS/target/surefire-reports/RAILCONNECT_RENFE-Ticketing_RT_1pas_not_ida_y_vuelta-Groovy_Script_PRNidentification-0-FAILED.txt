@@ -1,0 +1,38 @@
+Status: FAILED
+Time Taken: 166
+Size: 0
+Timestamp: Fri Dec 16 17:31:02 EET 2016
+TestStep: Groovy Script PRNidentification
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.PnrIdentification.@PnrReference==xmlSlurperEtalon.Body.RailConnect_IssueContractRQ.PnrIdentification.@PnrReference
+        |          |    |                           |       |       |                  |           | |                |    |                           |                  |
+        |          |    Booking not found           |       |       |                  |           | |                |    |                           |                  ?
+        |          Booking not found                |       |       |                  |           | |                |    |                           groovy.util.slurpersupport.NodeChildren@5c313f8d (toString() == "")
+        Booking not found                           |       |       |                  |           | |                |    groovy.util.slurpersupport.NodeChildren@ee6ac51 (toString() == "")
+                                                    |       |       |                  |           | |                groovy.util.slurpersupport.NodeChildren@5adb3505 (toString() == "")
+                                                    |       |       |                  |           | 1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99
+                                                    |       |       |                  |           false
+                                                    |       |       |                  groovy.util.slurpersupport.Attributes@39ec8444 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@6cf419a3 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@57cba448 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@54bbc0a9 (toString() == "")
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.PnrIdentification.@PnrReference==xmlSlurperEtalon.Body.RailConnect_IssueContractRQ.PnrIdentification.@PnrReference
+        |          |    |                           |       |       |                  |           | |                |    |                           |                  |
+        |          |    Booking not found           |       |       |                  |           | |                |    |                           |                  ?
+        |          Booking not found                |       |       |                  |           | |                |    |                           groovy.util.slurpersupport.NodeChildren@5c313f8d (toString() == "")
+        Booking not found                           |       |       |                  |           | |                |    groovy.util.slurpersupport.NodeChildren@ee6ac51 (toString() == "")
+                                                    |       |       |                  |           | |                groovy.util.slurpersupport.NodeChildren@5adb3505 (toString() == "")
+                                                    |       |       |                  |           | 1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99
+                                                    |       |       |                  |           false
+                                                    |       |       |                  groovy.util.slurpersupport.Attributes@39ec8444 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@6cf419a3 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@57cba448 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@54bbc0a9 (toString() == "")
+
+error at line: 10

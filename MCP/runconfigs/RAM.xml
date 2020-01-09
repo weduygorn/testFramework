@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RAM" parallel="classes" thread-count="1">
+    <groups>
+        <run>
+            <include name="test"/>
+            <include name="demo"/>
+        </run>
+    </groups>
+    <test name="E2E MonoInventory">
+        <classes>
+            <class name="tests.providerscenarios.RAM.MonoInventory.CheckE2EScenarioFlow"/>
+        </classes>
+    </test>
+    <test name="E2E MultiInventory">
+        <classes>
+            <class name="tests.providerscenarios.RAM.MultiInventory.CheckE2EScenarioFlow"/>
+        </classes>
+    </test>
+
+</suite>

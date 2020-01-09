@@ -1,0 +1,60 @@
+Status: FAILED
+Time Taken: 203
+Size: 698
+Timestamp: Fri Dec 16 17:31:01 EET 2016
+TestStep: Ticketing
+
+----------------- Messages ------------------------------
+[Contains] Missing token [<PnrIdentification ] in Response
+
+----------------- Properties ------------------------------
+Endpoint: https://dev.amr.local/railconnect/ticket
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : dev.amr.local
+Accept-Encoding : gzip,deflate
+Content-Length : 755
+Content-Type : application/soap+xml;charset=UTF-8;action="https://dev.amr.local/railconnect/ticket"
+
+
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:iss="IssueContractRQ">
+   <soap:Header>
+      <auth>
+         <secretKey>1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99</secretKey>
+      </auth>
+   </soap:Header>
+   <soap:Body>
+      <iss:RailConnect_IssueContractRQ Distributor="?" Language="?" Options="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <PnrIdentification PnrReference="?" Inventory="RNF"/>
+         <Issue>
+            <FormatAndDelivery Type="006" DeliveryMode="002"/>
+         </Issue>
+      </iss:RailConnect_IssueContractRQ>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Server : nginx/1.10.0
+Cache-Control : no-cache
+Connection : keep-alive
+Set-Cookie : PHPSESSID=34130d58c94a2f4c73696a26917d454b; expires=Sat, 17-Dec-2016 03:29:45 GMT; Max-Age=43200; path=/; secure; HttpOnly
+#status# : HTTP/1.1 200 OK
+Content-Length : 698
+Date : Fri, 16 Dec 2016 15:29:45 GMT
+Content-Type : text/xml; charset=UTF-8
+X-Powered-By : PHP/7.0.13
+
+
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="issue_contract_ctr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="IssueContractRS" xmlns:enc="http://www.w3.org/2003/05/soap-encoding">
+   <env:Body>
+      <ns2:RailConnect_IssueContractRS TimeStamp="2016-12-16T15:29:45+00:00" Version="?" CorrelationID="?" xsi:type="ns2:RailConnect_IssueContractRS">
+         <Failure xsi:type="ns2:Failure">
+            <Warning Code="0" xsi:type="ns1:WarningType"/>
+            <Error xsi:type="ns1:ErrorType" Code="0" Type="System">Booking not found</Error>
+         </Failure>
+      </ns2:RailConnect_IssueContractRS>
+   </env:Body>
+</env:Envelope>

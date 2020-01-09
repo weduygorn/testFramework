@@ -1,0 +1,135 @@
+Status: FAILED
+Time Taken: 4201
+Size: 2918
+Timestamp: Fri Dec 16 17:23:47 EET 2016
+TestStep: Booking
+
+----------------- Messages ------------------------------
+[Contains] Missing token [LastName too long] in Response
+
+----------------- Properties ------------------------------
+Endpoint: https://dev.amr.local/railconnect/book
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : dev.amr.local
+Accept-Encoding : gzip,deflate
+Content-Length : 2985
+Content-Type : application/soap+xml;charset=UTF-8;action="https://demo-amr.contentrail.com/railconnect/book"
+
+
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:sel="SellSegmentRQ">
+   <soap:Header>
+      <auth>
+         <secretKey>1d10e690eaae068a45e5a31f34a5c08cd864d571032a868f90e55b7a1e140f99</secretKey>
+      </auth>
+   </soap:Header>
+   <soap:Body>
+      <sel:RailConnect_SellSegmentRQ Distributor="?" Language="?" ReservationOptions="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <!--1 to 99 repetitions:-->
+         <Passenger>
+            <!--1 to 9 repetitions:-->
+            <Actor ID="1">
+               <Name FirstName="Name" LastName="abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij"/>
+            </Actor>
+            <Contact ID="1" PaxIDs="1">
+               <!--You have a CHOICE of the next 3 items at this level-->
+               <Email>asd@sdf.com</Email>
+            </Contact>
+         </Passenger>
+         <Reservation ID="1">
+            <!--1 to 99 repetitions:-->
+            <Product ID="PRODUCT_1" Type="002" Class="002" MainClass="T" AccomType="002"/>
+            <Schedule ID="SCHEDULE_1">
+               <Departure xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">60000</LocationCode>
+               </Departure>
+               <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" xmlns:sell="sell_segment_ctr">
+                  <LocationCode Context="RNF">71801</LocationCode>
+               </Arrival>
+               <Segment ID="SEGMENT_1" Type="002" Inventory="RNF">
+                  <Departure xsi:type="sell:DateTimeLocationType" LocationName="Madrid Puerta de Atocha" DateTime="2016-12-18T06:20:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">60000</LocationCode>
+                  </Departure>
+                  <Arrival xsi:type="sell:DateTimeLocationType" LocationName="Barcelona Sants" DateTime="2016-12-18T09:29:00" xmlns:sell="sell_segment_ctr">
+                     <LocationCode Context="RNF">71801</LocationCode>
+                  </Arrival>
+                  <ServiceProviderCode xsi:type="sell:StringLength1to16" xmlns:sell="sell_segment_ctr">RNF</ServiceProviderCode>
+                  <Identifier xsi:type="sell:StringLength1to8" xmlns:sell="sell_segment_ctr">03463</Identifier>
+               </Segment>
+            </Schedule>
+            <Pricing ID="PRICING_SOLUTION_1" PrdIDs="PRODUCT_1" PaxIDs="1" SegIDs="SEGMENT_1">
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <Fare xsi:type="sell:FareTypeRQ" Code="GL107|CG34VLA|C09-2" Family="007" Type="001" xmlns:sell="sell_segment_ctr"/>
+               <BookingToken>OID[1505495]SRPID[18076]</BookingToken>
+            </Pricing>
+         </Reservation>
+      </sel:RailConnect_SellSegmentRQ>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Server : nginx/1.10.0
+Cache-Control : no-cache
+Connection : keep-alive
+Set-Cookie : PHPSESSID=b5d97d0727f7ba4ec6b500c80f2bb1f8; expires=Sat, 17-Dec-2016 03:22:35 GMT; Max-Age=43200; path=/; secure; HttpOnly
+#status# : HTTP/1.1 200 OK
+Content-Length : 2918
+Date : Fri, 16 Dec 2016 15:22:35 GMT
+Content-Type : text/xml; charset=UTF-8
+X-Powered-By : PHP/7.0.13
+
+
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="SellSegmentRS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="SellSegmentRQ" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns3="sell_segment_ctr" xmlns:enc="http://www.w3.org/2003/05/soap-encoding">
+   <env:Body>
+      <ns1:RailConnect_SellSegmentRS TimeStamp="2016-12-16T15:22:35+00:00" Version="1.0" CorrelationID="?" xsi:type="ns1:RailConnect_SellSegmentRS">
+         <Success xsi:type="ns1:Success">
+            <Booking xsi:type="ns1:Booking">
+               <PnrIdentification PnrReference="R00016985034" CreationDate="2016-12-16T15:22:33" Inventory="RNF" xsi:type="ns1:PnrIdentification"/>
+               <Passenger xsi:type="ns2:Passenger">
+                  <Actor ID="1" xsi:type="ns2:Actor">
+                     <Name FirstName="Name" LastName="abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij" xsi:type="ns2:Name"/>
+                  </Actor>
+                  <Contact ID="1" PaxIDs="1" xsi:type="ns2:Contact">
+                     <Email xsi:type="ns2:Email">asd@sdf.com</Email>
+                  </Contact>
+               </Passenger>
+               <Reservation ID="1" xsi:type="ns1:Reservation">
+                  <Product Type="002" Class="002" MainClass="T" AccomType="002" xsi:type="ns3:ProductTypeRQ"/>
+                  <Schedule ID="SCHEDULE_1" xsi:type="ns2:Schedule">
+                     <Departure LocationName="Madrid Puerta de Atocha" xsi:type="ns3:DateTimeLocationType">
+                        <LocationCode xsi:type="ns3:LocationCode" Context="RNF">60000</LocationCode>
+                     </Departure>
+                     <Arrival LocationName="Barcelona Sants" xsi:type="ns3:DateTimeLocationType">
+                        <LocationCode xsi:type="ns3:LocationCode" Context="RNF">71801</LocationCode>
+                     </Arrival>
+                     <Segment Type="002" xsi:type="ns3:Segment" ID="SEGMENT_1">
+                        <Departure LocationName="Madrid Puerta de Atocha" DateTime="2016-12-18T06:20:00" xsi:type="ns3:DateTimeLocationType">
+                           <LocationCode xsi:type="ns3:LocationCode" Context="RNF">60000</LocationCode>
+                        </Departure>
+                        <Arrival LocationName="Barcelona Sants" DateTime="2016-12-18T09:29:00" xsi:type="ns3:DateTimeLocationType">
+                           <LocationCode xsi:type="ns3:LocationCode" Context="RNF">71801</LocationCode>
+                        </Arrival>
+                        <ServiceProviderCode xsi:type="ns3:StringLength1to16">RNF</ServiceProviderCode>
+                        <Identifier xsi:type="ns3:StringLength1to8">03463</Identifier>
+                     </Segment>
+                  </Schedule>
+                  <Pricing xsi:type="ns1:Pricing">
+                     <Fare Code="GL107|CG34VLA|C09-2" Family="007" Type="001" Flexibility="004" DisplayName="Promo" xsi:type="ns1:Fare" ID="FARE_1" SegIDs="SEGMENT_1" PaxIDs="1">
+                        <Condition xsi:type="ns3:Condition">http://www.renfe.com/viajeros/tarifas/</Condition>
+                     </Fare>
+                     <TotalQuote xsi:type="ns1:TotalQuote" TicketingExpirationTime="2016-12-16T15:52:33+00:00">
+                        <Price CurrencyCode="EUR" DecimalPlaces="2" Amount="4910" xsi:type="ns3:PriceType"/>
+                     </TotalQuote>
+                     <DetailQuote xsi:type="ns3:DetailQuote" SegIDs="SEGMENT_1" PaxIDs="1" FareIDs="FARE_1" PrdIDs="PRODUCT_1">
+                        <Price CurrencyCode="EUR" DecimalPlaces="2" Amount="4910" xsi:type="ns3:PriceType"/>
+                     </DetailQuote>
+                  </Pricing>
+               </Reservation>
+            </Booking>
+         </Success>
+      </ns1:RailConnect_SellSegmentRS>
+   </env:Body>
+</env:Envelope>

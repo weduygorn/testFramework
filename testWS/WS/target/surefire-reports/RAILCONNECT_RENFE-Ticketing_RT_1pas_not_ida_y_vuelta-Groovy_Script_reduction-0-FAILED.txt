@@ -1,0 +1,44 @@
+Status: FAILED
+Time Taken: 180
+Size: 0
+Timestamp: Fri Dec 16 17:31:03 EET 2016
+TestStep: Groovy Script reduction
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode
+        |          |    |                           |       |       |           |         |                    | |                |    |                         |       |       |           |         |
+        |          |    Booking not found           |       |       |           |         |                    | |                |    |                         |       |       |           002       002
+        |          Booking not found                |       |       |           |         |                    | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        Booking not found                           |       |       |           |         |                    | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    false
+                                                    |       |       |           |         groovy.util.slurpersupport.NodeChildren@6bf67d98 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@b39f2f7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1e67e7be (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@4c23057e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@14e1abdf (toString() == "")
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode==xmlSlurperEtalon.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Reduction.PassengerCategoryCode
+        |          |    |                           |       |       |           |         |                    | |                |    |                         |       |       |           |         |
+        |          |    Booking not found           |       |       |           |         |                    | |                |    |                         |       |       |           002       002
+        |          Booking not found                |       |       |           |         |                    | |                |    |                         |       |       60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+        Booking not found                           |       |       |           |         |                    | |                |    |                         |       asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    |                         asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                |    asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | |                asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    | asd@sdf.com60000718016000071801RNF0312371801600007180160000RNF03192002http://www.renfe.com/viajeros/tarifas/http://www.renfe.com/viajeros/tarifas/
+                                                    |       |       |           |         |                    false
+                                                    |       |       |           |         groovy.util.slurpersupport.NodeChildren@6bf67d98 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@b39f2f7 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@1e67e7be (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@4c23057e (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@14e1abdf (toString() == "")
+
+error at line: 11

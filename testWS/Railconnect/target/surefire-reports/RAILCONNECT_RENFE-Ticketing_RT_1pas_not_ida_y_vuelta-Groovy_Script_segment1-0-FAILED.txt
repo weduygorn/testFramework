@@ -1,0 +1,34 @@
+Status: FAILED
+Time Taken: 145
+Size: 0
+Timestamp: Fri Dec 16 17:31:02 EET 2016
+TestStep: Groovy Script segment1
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[0].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@38239f63 (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@3a48f60b (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@a593340 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@583d4e86 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7c410a65 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@1c45348 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4244a303 (toString() == "")
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.Schedule[0].Segment.@ID!=""
+        |          |    |                           |       |       |           |       |   |        | |
+        |          |    Booking not found           |       |       |           |       |   |        | false
+        |          Booking not found                |       |       |           |       |   |        groovy.util.slurpersupport.Attributes@38239f63 (toString() == "")
+        Booking not found                           |       |       |           |       |   groovy.util.slurpersupport.NodeChildren@3a48f60b (toString() == "")
+                                                    |       |       |           |       groovy.util.slurpersupport.NoChildren@a593340 (toString() == "")
+                                                    |       |       |           groovy.util.slurpersupport.NodeChildren@583d4e86 (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@7c410a65 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@1c45348 (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@4244a303 (toString() == "")
+
+error at line: 10

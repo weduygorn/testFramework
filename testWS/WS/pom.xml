@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.amadeus</groupId>
+    <artifactId>amr-ws-soapui</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+	
+	
+    <pluginRepositories>
+        <pluginRepository>
+            <id>smartbear-sweden-plugin-repository</id>
+            <url>http://www.soapui.org/repository/maven2/</url>
+        </pluginRepository>
+		
+    </pluginRepositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.smartbear.soapui</groupId>
+                <artifactId>soapui-maven-plugin</artifactId>
+                <version>5.2.1</version>
+                <executions>
+                    <execution>
+                        <id>AMR_WebService</id>
+                        <configuration>
+                            <projectFile>${basedir}/test.xml</projectFile>
+                            
+                           
+                            <outputFolder>${project.build.directory}/surefire-reports</outputFolder>
+                            <testSuite>${test.suite}</testSuite>
+
+                            <junitReport>true</junitReport>
+                            
+                            <exportAll>${save.all.request}</exportAll>
+                            <testFailIgnore>true</testFailIgnore>
+                        </configuration>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <phase>test</phase>
+                    </execution>
+                </executions>
+            <dependencies>
+            <dependency>
+								<groupId>com.jgoodies</groupId>
+								<artifactId>forms</artifactId>
+								<version>1.0.7</version>
+			</dependency>
+    </dependencies>
+			</plugin>
+			
+        </plugins>
+    </build>
+ <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.19.1</version>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

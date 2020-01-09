@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="INT: Check Web Shop -> CFD -> Ticket Shop flow" thread-count="2" parallel="tests">
+    <groups>
+        <run>
+            <include name="dev"/>
+            <include name="test"/>
+            <include name="demo"/>
+            <include name="stage"/>
+        </run>
+    </groups>
+    <parameter name="searchMode" value="Departure"/>
+
+    <test name="Delle -> Belfort">
+        <parameter name="originName" value="Delle"/>
+        <parameter name="destinationName" value="Belfort"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Martigny  -> Chamonix-Mont-Blanc">
+        <parameter name="originName" value="Martigny"/>
+        <parameter name="destinationName" value="Chamonix-Mont-Blanc"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Vallorbe -> Frasne">
+        <parameter name="originName" value="Vallorbe"/>
+        <parameter name="destinationName" value="Frasne"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Le Locle -> Besançon-Viotte">
+        <parameter name="originName" value="Le Locle"/>
+        <parameter name="destinationName" value="Besançon-Viotte"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Basel SBB -> Colmar">
+        <parameter name="originName" value="Basel SBB"/>
+        <parameter name="destinationName" value="Colmar"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Basel SBB -> Belfort">
+        <parameter name="originName" value="Basel SBB"/>
+        <parameter name="destinationName" value="Belfort"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Genève -> Lyon-Part-Dieu">
+        <parameter name="originName" value="Genève"/>
+        <parameter name="destinationName" value="Lyon-Part-Dieu"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Genève -> Aix-en-Provence">
+        <parameter name="originName" value="Genève"/>
+        <parameter name="destinationName" value="Aix-en-Provence"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Genève -> Annemasse">
+        <parameter name="originName" value="Genève"/>
+        <parameter name="destinationName" value="Annemasse"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Chur -> Paris Gare de Lyon">
+        <parameter name="originName" value="Chur"/>
+        <parameter name="destinationName" value="Paris Gare de Lyon"/>
+        <parameter name="time" value="07:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Montreux -> Paris Gare de Lyon">
+        <parameter name="originName" value="Montreux"/>
+        <parameter name="destinationName" value="Paris Gare de Lyon"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Basel Bad Bf -> Interlaken West">
+        <parameter name="originName" value="Basel Bad Bf"/>
+        <parameter name="destinationName" value="Interlaken West"/>
+        <parameter name="time" value="12:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Zürich HB -> Winterthur">
+        <parameter name="originName" value="Zürich HB"/>
+        <parameter name="destinationName" value="Winterthur"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Basel Bad Bf -> Luzern">
+        <parameter name="originName" value="Basel Bad Bf"/>
+        <parameter name="destinationName" value="Luzern"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Bern -> Zürich HB">
+        <parameter name="originName" value="Bern"/>
+        <parameter name="destinationName" value="Zürich HB"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Lausanne -> Genève">
+        <parameter name="originName" value="Lausanne"/>
+        <parameter name="destinationName" value="Genève"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Bern -> Basel SBB">
+        <parameter name="originName" value="Bern"/>
+        <parameter name="destinationName" value="Basel SBB"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Zürich HB -> Basel Bad Bf">
+        <parameter name="originName" value="Zürich HB"/>
+        <parameter name="destinationName" value="Basel Bad Bf"/>
+        <parameter name="time" value="11:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Zürich Flughafen -> Davos Dorf">
+        <parameter name="originName" value="Zürich Flughafen"/>
+        <parameter name="destinationName" value="Davos Dorf"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Zürich Flughafen -> Zermatt">
+        <parameter name="originName" value="Zürich Flughafen"/>
+        <parameter name="destinationName" value="Zermatt"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+     <test name="Zürich Flughafen -> Grindelwald">
+        <parameter name="originName" value="Zürich Flughafen"/>
+        <parameter name="destinationName" value="Grindelwald"/>
+         <parameter name="time" value="20:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Genève-Aéroport -> Montreux">
+        <parameter name="originName" value="Genève-Aéroport"/>
+        <parameter name="destinationName" value="Montreux"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Genève-Aéroport -> Leysin-Feydey">
+        <parameter name="originName" value="Genève-Aéroport"/>
+        <parameter name="destinationName" value="Leysin-Feydey"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Genève-Aéroport -> Zermatt">
+        <parameter name="originName" value="Genève-Aéroport"/>
+        <parameter name="destinationName" value="Zermatt"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Basel Bad Bf -> Olten">
+        <parameter name="originName" value="Basel Bad Bf"/>
+        <parameter name="destinationName" value="Olten"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Bern -> Stalden i.E.">
+        <parameter name="originName" value="Bern"/>
+        <parameter name="destinationName" value="Stalden i.E."/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Stechelberg, Schilthornbahn -> Mürren">
+        <parameter name="originName" value="Stechelberg, Schilthornbahn"/>
+        <parameter name="destinationName" value="Mürren"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Luzern Bahnhofquai -> Vitznau">
+        <parameter name="originName" value="Luzern Bahnhofquai"/>
+        <parameter name="destinationName" value="Vitznau"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Chur -> Zermatt">
+        <parameter name="originName" value="Chur"/>
+        <parameter name="destinationName" value="Zermatt"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Köln Hbf -> Lille-Europe">
+        <parameter name="originName" value="Köln Hbf"/>
+        <parameter name="destinationName" value="Lille-Europe"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Mannheim Hbf -> Paris-Est">
+        <parameter name="originName" value="Mannheim Hbf"/>
+        <parameter name="destinationName" value="Paris-Est"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Karlsruhe Hbf -> Strasbourg Ville">
+        <parameter name="originName" value="Karlsruhe Hbf"/>
+        <parameter name="destinationName" value="Strasbourg Ville"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <!--NEW: 16.11.2018 for dev,test,demo-->
+    <test name="Bern -> Basel">
+        <parameter name="originName" value="Bern"/>
+        <parameter name="destinationName" value="Basel"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Chur -> Paris">
+        <parameter name="originName" value="Chur"/>
+        <parameter name="destinationName" value="Paris"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="Montreux  -> Paris">
+        <parameter name="originName" value="Bern"/>
+        <parameter name="destinationName" value="Paris"/>
+        <parameter name="time" value="15:00"/>
+        <classes>
+            <class name="tests.e2e.E2E"/>
+        </classes>
+    </test>
+
+</suite>

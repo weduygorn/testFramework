@@ -1,0 +1,38 @@
+Status: FAILED
+Time Taken: 144
+Size: 0
+Timestamp: Fri Dec 16 17:19:45 EET 2016
+TestStep: Groovy Script Segment attrs assert
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule.Segment.@SubType!=""
+        |          |    |                         |       |       |           |        |        |      |
+        |          |    |                         |       |       |           |        |        |      false
+        |          |    |                         |       |       |           |        |        groovy.util.slurpersupport.Attributes@5d2a341d (toString() == "")
+        |          |    |                         |       |       |           |        6000071801RNF03463
+        |          |    |                         |       |       |           60000718016000071801RNF03463
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_SellSegmentRS.Success.Booking.Reservation.Schedule.Segment.@SubType!=""
+        |          |    |                         |       |       |           |        |        |      |
+        |          |    |                         |       |       |           |        |        |      false
+        |          |    |                         |       |       |           |        |        groovy.util.slurpersupport.Attributes@5d2a341d (toString() == "")
+        |          |    |                         |       |       |           |        6000071801RNF03463
+        |          |    |                         |       |       |           60000718016000071801RNF03463
+        |          |    |                         |       |       60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         |       asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    |                         asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          |    asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        |          asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+        asd@sdf.com60000718016000071801RNF03463http://www.renfe.com/viajeros/tarifas/
+
+error at line: 13

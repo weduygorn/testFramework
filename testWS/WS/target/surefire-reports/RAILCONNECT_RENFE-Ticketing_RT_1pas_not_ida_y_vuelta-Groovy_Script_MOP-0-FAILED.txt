@@ -1,0 +1,30 @@
+Status: FAILED
+Time Taken: 76
+Size: 0
+Timestamp: Fri Dec 16 17:31:03 EET 2016
+TestStep: Groovy Script MOP
+Error:Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.MethodOfPayment.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@db1bc56 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3e12e57d (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@29bb16f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@64d4c5dc (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@6487861c (toString() == "")
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  xmlSlurper.Body.RailConnect_IssueContractRS.Success.Booking.Reservation.MethodOfPayment.@ID!=""
+        |          |    |                           |       |       |           |                | |
+        |          |    Booking not found           |       |       |           |                | false
+        |          Booking not found                |       |       |           |                groovy.util.slurpersupport.Attributes@db1bc56 (toString() == "")
+        Booking not found                           |       |       |           groovy.util.slurpersupport.NodeChildren@3e12e57d (toString() == "")
+                                                    |       |       groovy.util.slurpersupport.NodeChildren@29bb16f9 (toString() == "")
+                                                    |       groovy.util.slurpersupport.NodeChildren@64d4c5dc (toString() == "")
+                                                    groovy.util.slurpersupport.NodeChildren@6487861c (toString() == "")
+
+error at line: 8
