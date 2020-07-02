@@ -15,7 +15,7 @@
         <htmlelements.version>1.19</htmlelements.version>
         <jsoup.version>1.8.3</jsoup.version>
         <jdbi.version>2.75</jdbi.version>
-        <mysqlconnector.version>5.1.31</mysqlconnector.version>
+        <mysqlconnector.version>8.0.16</mysqlconnector.version>
         <json.version>20160212</json.version>
         <env>dev2</env>
         <os>windows</os>
