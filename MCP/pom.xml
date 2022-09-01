@@ -13,7 +13,7 @@
         <selenium.version>3.11.0</selenium.version>
         <ashot.vervion>1.5.2</ashot.vervion>
         <htmlelements.version>1.19</htmlelements.version>
-        <jsoup.version>1.8.3</jsoup.version>
+        <jsoup.version>1.15.3</jsoup.version>
         <jdbi.version>2.75</jdbi.version>
         <mysqlconnector.version>5.1.31</mysqlconnector.version>
         <json.version>20160212</json.version>
